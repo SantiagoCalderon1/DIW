@@ -12,7 +12,7 @@ body {
 
 #header {
   background-color: rgba(239, 193, 166, 255);
-  display: inline-block;
+  float: left;
   width: 980px;
   height: 80px;
   margin: 0 310px;
@@ -20,31 +20,33 @@ body {
 
 #nav {
   background-color: rgba(238, 239, 166, 255);
-  width: 980px;
-  height: 21px;
+  float: left;
+  width: 180px;
+  height: 250px;
 }
 
 #main {
   background-color: rgba(191, 244, 160, 255);
+  float: left;
   width: 980px;
   height: 500px;
   margin: 0 310px;
 }
 #section {
   background-color: rgba(160, 240, 244, 255);
-  display: inline-block;
-  width: 781px;
+  float: left;
+  width: 650px;
   height: 498px;
 }
 #aside {
   background-color: rgba(180, 180, 228, 255);
-  display: inline-block;
-  width: 194px;
+  float: right;
+  width: 150px;
   height: 498px;
 }
 #footer {
   background-color: rgba(237, 166, 166, 255);
-
+  float: left;
   width: 980px;
   height: 20px;
   margin: 0 310px;
