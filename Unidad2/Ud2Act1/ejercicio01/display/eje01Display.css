@@ -1,3 +1,4 @@
+/*Santiago Calderon Castaño*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body {
 
 #header {
   background-color: rgba(239, 193, 166, 255);
-  float: left;
+  display: inline-block;
   width: 980px;
   height: 80px;
   margin: 0 310px;
@@ -21,31 +22,29 @@ body {
   background-color: rgba(238, 239, 166, 255);
   width: 980px;
   height: 21px;
-  
 }
 
 #main {
   background-color: rgba(191, 244, 160, 255);
-  float: left;
   width: 980px;
   height: 500px;
   margin: 0 310px;
 }
 #section {
   background-color: rgba(160, 240, 244, 255);
-  float: left;
-  width: 782px;
+  display: inline-block;
+  width: 780px;
   height: 498px;
 }
 #aside {
   background-color: rgba(180, 180, 228, 255);
-  float: right;
+  display: inline-block;
   width: 194px;
   height: 498px;
 }
 #footer {
   background-color: rgba(237, 166, 166, 255);
-  float: left;
+
   width: 980px;
   height: 20px;
   margin: 0 310px;

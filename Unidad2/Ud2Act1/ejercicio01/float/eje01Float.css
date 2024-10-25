@@ -1,50 +1,67 @@
-/*
-<div id="container">
-        <div id="header">Cabecera</div>
-        <div id="nav">Barra de navegación</div>
-        <div id="body">
-            <div id="info-main">Información Principal</div>
-            <div id="nav-aside">Barra Lateral</div>
-        </div>
-        <div id="footer">Institucional</div>
-    </div>
-*/
-
+/*Santiago Calderon Castaño*/
 * {
-  margin: 0;
-  padding: 0;
-  /*border: 1px solid red;*/
-}
-
-body {
-  background-color: rgb(255, 255, 216);
-}
-
-#container {
-  border: 1px solid green;
-  width: 980px;
-  height: 200px;
-}
-
-#header {
-    background-color: peachpuff;
-    border: 1px solid red;
-}
-#nav {
-    background-color: rgb(220, 220, 120);
-    border: 1px solid red;
-}
-#body {
-    background-color: rgb(118, 217, 118);
-    border: 1px solid red;
-}
-#info-main {
-    background-color: rgb(78, 191, 247)5)87, 87, 148);
-    border: 1px solid red;
-}
-#nav-aside {
-    border: 1px solid red;
-}
-#footer {
-    border: 1px solid red;
-}
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: rgba(245, 245, 220, 255);
+    text-align: center;
+  }
+  
+  #header {
+    background-color: rgba(239, 193, 166, 255);
+    float: left;
+    width: 980px;
+    height: 80px;
+    margin: 0 310px;
+  }
+  
+  #nav {
+    background-color: rgba(238, 239, 166, 255);
+    width: 980px;
+    height: 21px;
+    
+  }
+  
+  #main {
+    background-color: rgba(191, 244, 160, 255);
+    float: left;
+    width: 980px;
+    height: 500px;
+    margin: 0 310px;
+  }
+  #section {
+    background-color: rgba(160, 240, 244, 255);
+    float: left;
+    width: 782px;
+    height: 498px;
+  }
+  #aside {
+    background-color: rgba(180, 180, 228, 255);
+    float: right;
+    width: 194px;
+    height: 498px;
+  }
+  #footer {
+    background-color: rgba(237, 166, 166, 255);
+    float: left;
+    width: 980px;
+    height: 20px;
+    margin: 0 310px;
+  }
+  
+  #pHeader p {
+    margin-top: 20px;
+  }
+  
+  #pNav {
+    margin-top: 21px;
+  }
+  
+  #pSection,
+  #pAside {
+    padding-top: 250px;
+  }
+  
