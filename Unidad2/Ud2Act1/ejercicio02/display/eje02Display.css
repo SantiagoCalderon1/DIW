@@ -7,60 +7,74 @@
 
 body {
   background-color: rgba(245, 245, 220, 255);
-  text-align: center;
-}
-
-#header {
-  background-color: rgba(239, 193, 166, 255);
-  float: left;
-  width: 980px;
-  height: 80px;
-  margin: 0 310px;
-}
-
-#nav {
-  background-color: rgba(238, 239, 166, 255);
-  float: left;
-  width: 180px;
-  height: 250px;
 }
 
 #main {
   background-color: rgba(191, 244, 160, 255);
-  float: left;
   width: 980px;
   height: 500px;
   margin: 0 310px;
+  font-size: 0; /* elimina el espacio entre los divs del main*/
 }
+
+#main > div{
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: rgba(239, 193, 166, 255);
+  display: inline-block;
+  width: 980px;
+  height: 80px;
+  margin: 0 310px;
+  text-align: center;
+}
+
+#nav {
+  background-color: rgba(238, 239, 166, 255);
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 #section {
   background-color: rgba(160, 240, 244, 255);
-  float: left;
-  width: 650px;
+  display: inline-block;
+  width: 680px;
   height: 498px;
+
+  line-height: 498px;
+  text-align: center;
+  vertical-align: middle;
 }
+
 #aside {
   background-color: rgba(180, 180, 228, 255);
-  float: right;
+  display: inline-block;
   width: 150px;
   height: 498px;
+
+  line-height: 498px;
+  text-align: center;
+  vertical-align: middle;
 }
+
 #footer {
   background-color: rgba(237, 166, 166, 255);
-  float: left;
+  display: inline-block;
   width: 980px;
   height: 20px;
   margin: 0 310px;
+  text-align: center;
 }
 
 #pHeader p {
   margin-top: 20px;
-}
-
-#pNav {
-  margin-top: 21px;
-}
-
-#pSection,
-#pAside {
-  padding-top: 250px;
 }
