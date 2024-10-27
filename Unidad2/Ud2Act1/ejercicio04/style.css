@@ -6,9 +6,8 @@
 }
 
 #container {
-    width: 980px;
+    width: 100%;
     height: 100vh;
-    background-color: red;
     margin: 0 auto;
 }
 
@@ -16,33 +15,38 @@
     background-color: rgba(75, 175, 115, 255);
     float: left;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
+
+    text-align: center;
 }
 
-#pHeader {
-    width: 100%;
+#navHeader > li {
+    display: inline;
+    font-size: 20px;
     /*Centrar el texto*/
-    line-height: 10vh;
-    text-align: center;
+    line-height: 8vh;
+    padding: 0 2.5%;
 }
 
 #aside {
     background-color: rgba(90, 166, 192, 255);
     float: left;
     width: 20%;
-    height: 85vh;
+    height: 87%;
 }
 
-#pAside {
+#navAside > li {
+    font-size: 30px;
     width: 100%;
     text-align: center;
+    margin-top: 100px;
 }
 
 #main {
     background-color: rgba(209, 125, 249, 255);
     float: right;
     width: 80%;
-    height: 85vh;
+    height: 87%;
 }
 
 #pMain {
@@ -52,7 +56,7 @@
 
 #section1,
 #section2 {
-    border: 3px solid red;
+    border: 5px solid red;
     float: left;
     width: 95%;
     height: 37vh;
@@ -65,18 +69,18 @@
 }
 
 #section1>div {
-    border: 3px solid rgba(43, 25, 252, 255);
+    border: 5px solid rgba(43, 25, 252, 255);
     float: left;
-    width: 44%;
+    width: 43%;
     height: 30vh;
 
     margin: 3% 2.5%;
 }
 
 #section2>div {
-    border: 3px solid rgba(43, 25, 252, 255);
+    border: 5px solid rgba(43, 25, 252, 255);
     float: left;
-    width: 28%;
+    width: 27%;
     height: 28vh;
     margin: 3.5% 2.22%;
 }
@@ -91,6 +95,29 @@
 #pFooter {
     width: 100%;
 
+    height: 5vh;
     line-height: 5vh;
     text-align: center;
+}
+
+@media (min-width: 1090px) {
+    #header {
+        background-color: rgba(75, 175, 115, 255);
+        float: left;
+        width: 100%;
+        height: 8vh;
+        text-align: left;
+    }
+
+    #navHeader > li {
+        display: inline;
+        font-size: 20px;
+        /*Centrar el texto*/
+        line-height: 8vh;
+        padding: 0 2.5%;
+    }
+
+    #navHeader > li:first-child{
+        color: blue;
+    }
 }
