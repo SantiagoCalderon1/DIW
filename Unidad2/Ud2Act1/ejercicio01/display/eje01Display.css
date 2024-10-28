@@ -1,62 +1,97 @@
-/*Santiago Calderon Castaño*/
+/* Santiago Calderon Castaño */
+
+/* Reiniciamos los márgenes y el relleno de todos los elementos a 0 
+para asegurar que el diseño sea consistente en todos los navegadores */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Estilos del elemento body */
+/* Definimos un color de fondo beige claro y centramos el texto de todos 
+los elementos dentro del body */
 body {
   background-color: rgba(245, 245, 220, 255);
   text-align: center;
 }
 
+/* Estilos del encabezado (#header) */
+/* Usamos un color de fondo crema, establecemos un ancho fijo, centramos 
+el elemento y le damos altura */
 #header {
   background-color: rgba(239, 193, 166, 255);
   display: inline-block;
   width: 980px;
   height: 80px;
-  margin: 0 310px;
+  margin: 0 310px; /* Centrado horizontal */
 }
 
+/* Estilos de la barra de navegación (#nav) */
+/* Creamos un fondo amarillo claro, con ancho fijo y altura mínima para 
+el menú de navegación */
 #nav {
   background-color: rgba(238, 239, 166, 255);
   width: 980px;
   height: 21px;
 }
 
+/* Estilos del área principal (#main) */
+/* Establecemos un fondo verde claro y un tamaño fijo para contener el 
+contenido principal */
 #main {
   background-color: rgba(191, 244, 160, 255);
   width: 980px;
   height: 500px;
-  margin: 0 310px;
+  margin: 0 310px; /* Centrado horizontal */
 }
+
+/* Estilos para la sección principal (#section) */
+/* Usamos un color azul claro, colocamos el elemento en línea y definimos 
+sus dimensiones */
 #section {
   background-color: rgba(160, 240, 244, 255);
   display: inline-block;
   width: 781px;
   height: 498px;
 }
+
+/* Estilos para la barra lateral (#aside) */
+/* Asignamos un color de fondo azul suave, colocamos en línea y establecemos 
+un tamaño fijo */
 #aside {
   background-color: rgba(180, 180, 228, 255);
   display: inline-block;
   width: 194px;
   height: 498px;
 }
+
+/* Estilos del pie de página (#footer) */
+/* Color de fondo rosado y dimensiones definidas para un pie de página en la 
+parte inferior */
 #footer {
   background-color: rgba(237, 166, 166, 255);
-
   width: 980px;
   height: 20px;
-  margin: 0 310px;
+  margin: 0 310px; /* Centrado horizontal */
 }
 
+/* Ajustes de márgenes para el texto dentro del encabezado (#pHeader p) */
+/* Añade un margen superior para centrar verticalmente el texto dentro del 
+encabezado */
 #pHeader p {
   margin-top: 20px;
 }
 
+/* Ajustes de márgenes para el texto dentro de la barra de navegación (#pNav) */
+/* Añade un margen superior para alinear el contenido en el centro vertical */
 #pNav {
   margin-top: 21px;
 }
 
+/* Ajustes de relleno superior para el contenido dentro de la sección (#pSection) 
+y la barra lateral (#pAside) */
+/* Añade relleno superior para centrar verticalmente el contenido en ambas 
+áreas */
 #pSection,
 #pAside {
   padding-top: 250px;

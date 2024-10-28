@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--Santiago Calderon Castaño-->
+<!-- Santiago Calderon Castaño -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 04</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo CSS que proporciona el estilo para la página -->
 </head>
 
 <body>
     <!--
-        Usaría esta estructura para hacer la página
-    <header>
-        
-    </header>
-    <nav></nav>
-    <main>
-        <section>
-            <article></article>
-        </section>
-        <aside></aside>
-    </main>
-    <footer></footer>
+        Estructura básica recomendada para una página web.
+        <header>
+        </header>
+        <nav></nav>
+        <main>
+            <section>
+                <article></article>
+            </section>
+            <aside></aside>
+        </main>
+        <footer></footer>
     -->
+
+    <!-- Contenedor principal de la página que incluye todos los elementos -->
     <div id="container">
+        
+        <!-- Cabecera de la página que contiene el título principal -->
         <div id="header">
             <h1>Este es el título principal del sitio web</h1>
-
+            <!-- El título principal del sitio web, debe ser breve y descriptivo -->
         </div>
+
+        <!-- Barra de navegación con enlaces a diferentes secciones del sitio -->
         <div id="nav">
             <ul>
                 <li><a href="#">principal</a></li>
                 <li><a href="#">fotos</a></li>
                 <li><a href="#">videos</a></li>
                 <li><a href="#">contacto</a></li>
+                <!-- Lista de opciones en la barra de navegación -->
+                <!-- Los enlaces deben apuntar a las secciones relevantes del sitio -->
             </ul>
         </div>
+
+        <!-- Contenedor principal que alberga secciones y artículos -->
         <div id="main">
+            <!-- Sección principal donde se colocan los artículos -->
             <div id="sectionPrincipal">
                 <div id="section">
+                    <!-- Primer artículo con título, subtítulo y contenido -->
                     <div id="article1" class="article">
                         <h2>Título del mensaje uno</h2>
                         <h4>Subtítulo del mensaje uno</h4>
+                        <!-- Fecha de publicación del artículo -->
                         <p class="fechaPublicacion">Publicado el <time datetime="2023-10-13">13-10-2023</time></p>
                         <hr>
+                        <!-- Texto del primer mensaje -->
                         <p>Este es el texto de mi primer mensaje</p>
                         <div id="imgArticle1">
                             <img src="" alt="W3C WAI-ARIA">
+                            <!-- Alt debe describir la imagen para accesibilidad -->
                             <cite>Esta es la imagen del primer mensaje</cite>
+                            <!-- Cita que describe la imagen -->
                         </div>
                         <p class="comentarios">comentarios(0)</p>
+                        <!-- Indica el número de comentarios en el artículo -->
                     </div>
+                    <!-- Segundo artículo con título, subtítulo y contenido -->
                     <div id="article2" class="article">
                         <h2>Título del mensaje dos</h2>
                         <h4>Subtítulo del mensaje dos</h4>
-                        <p class="fechaPublicacion">Publicado el <time datetime="2023-15-12">15-12-2023 </time></p>
+                        <!-- Fecha de publicación del segundo artículo -->
+                        <p class="fechaPublicacion">Publicado el <time datetime="2023-12-15">15-12-2023</time></p>
                         <hr>
+                        <!-- Texto del segundo mensaje -->
                         <p>Este es el texto de mi segundo mensaje</p>
                         <p class="comentarios">comentarios(0)</p>
+                        <!-- Indica el número de comentarios en el segundo artículo -->
                     </div>
                 </div>
             </div>
 
+            <!-- Barra lateral con mensajes adicionales -->
             <div id="aside">
                 <p id="article3">Mensaje número uno</p>
                 <p id="article4">Mensaje número dos</p>
+                <!-- Estos son mensajes breves o resúmenes que complementan el contenido principal -->
             </div>
         </div>
 
+        <!-- Pie de página que contiene información sobre derechos de autor -->
         <div id="footer">
             <div id="lineaFooter"></div>
             <p>Derechos Reservados © 2024-2025</p>
+            <!-- Declaración de derechos reservados -->
         </div>
     </div>
 </body>

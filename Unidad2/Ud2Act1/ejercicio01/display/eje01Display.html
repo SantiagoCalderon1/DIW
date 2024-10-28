@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <!--Santiago Calderon Castaño-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="eje01Display.css".css">
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="eje01Display.css">
 </head>
+
 <body>
     <!--
-        Usaría esta estructura para hacer la página
+        Esta es la estructura básica recomendada para una página web.
     <header>
         <nav></nav>
     </header>
@@ -20,18 +23,40 @@
     <footer></footer>
     -->
 
-    <div id="header">
-        <div id="pHeader">
-            <p>Cabecera</p> 
+    <!-- Contendor General-->
+    <div id="container">
+        <!--Cabecera-->
+        <div id="header">
+            <!-- Texto de la cabecera-->
+            <div id="pHeader">
+                <p>Cabecera</p>
+            </div>
+            <!--Barra de navegación-->
+            <div id="nav">
+                <!--Texto de la barra de navegación-->
+                <p id="pNav">Barra de Navegación</p>
+            </div>
         </div>
-        <div id="nav">
-            <p id="pNav">Barra de Navegación</p>
+        <!--Contenedor principal-->
+        <div id="main">
+            <!--Sección donde podría ir información-->
+            <div id="section">
+                <!--Texto de información-->
+                <p id="pSection">Información Principal</p>
+            </div>
+            <!--Contenedor lateral-->
+            <div id="aside">
+                <!--Texto de contenedor lateral-->
+                <p id="pAside">Barra Lateral</p>
+            </div>
+        </div>
+        <!--Pie de página-->
+        <div id="footer">
+            <!--Texto del pie de página-->
+            <p id="pFooter">Institucional</p>
         </div>
     </div>
-    <div id="main">
-        <div id="section"><p id="pSection">Información Principal</sppan></div>
-        <div id="aside"><p id="pAside">Barra Lateral</p></div>
-    </div>
-    <div id="footer"><p id="pFooter">Institucional</p></div>
+
 </body>
+
 </html>

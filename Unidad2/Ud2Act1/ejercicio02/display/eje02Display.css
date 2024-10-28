@@ -1,79 +1,142 @@
+/* Reset global */
 /*Santiago Calderon Castaño*/
+
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Elimina el margen por defecto de todos los elementos */
+  padding: 0; /* Elimina el padding por defecto de todos los elementos */
+  box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto de los elementos */
 }
 
+/* Body */
 body {
-  background-color: rgba(245, 245, 220, 255);
+  margin-top: 20px; /* Espacio en la parte superior del body */
+  text-align: center; /* Centra el contenido textual dentro del body */
+  background-image: url("../imgs/old_map.png"); /* Imagen de fondo para el body */
 }
 
-#main {
-  background-color: rgba(191, 244, 160, 255);
-  width: 980px;
-  height: 500px;
-  margin: 0 310px;
-  font-size: 0; /* elimina el espacio entre los divs del main*/
+/* Page container */
+#page {
+  width: 960px; /* Ancho fijo para el contenedor de la página */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
 }
 
-#main > div{
-  display: inline-block;
-  vertical-align: top;
-  font-size: initial;
-  box-sizing: border-box;
-}
-
+/* Header */
 #header {
-  background-color: rgba(239, 193, 166, 255);
-  display: inline-block;
-  width: 980px;
-  height: 80px;
-  margin: 0 310px;
-  text-align: center;
+  font-family: Courier, sans-serif; /* Tipografía utilizada en el encabezado */
+  color: white; /* Color del texto del encabezado */
+  font-size: 1.1em; /* Tamaño de fuente del encabezado */
+  border-bottom: 6px solid black; /* Línea inferior para separar el encabezado del contenido */
+  background-color: #313B44; /* Color de fondo del encabezado */
+  padding: 20px 100px; /* Espaciado interno del encabezado (superior/inferior y lateral) */
+  background-image: url("../imgs/logo.png"); /* Imagen de fondo (logo) */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: 25px center; /* Posiciona el logo a la izquierda (25px desde la izquierda) */
 }
 
+/* Navigation */
 #nav {
-  background-color: rgba(238, 239, 166, 255);
-  display: inline-block;
-  width: 150px;
-  height: 200px;
-
-  line-height: 200px;
-  text-align: center;
-  vertical-align: middle;
+  font-family: Courier, sans-serif; /* Tipografía utilizada en la navegación */
+  font-size: 1.4em; /* Tamaño de fuente de la navegación */
+  color: silver; /* Color del texto de navegación */
+  text-align: center; /* Centra el texto de la navegación */
+  background-image: url("../imgs/red015.jpg"); /* Imagen de fondo de la navegación */
 }
 
-#section {
-  background-color: rgba(160, 240, 244, 255);
-  display: inline-block;
-  width: 680px;
-  height: 498px;
-
-  line-height: 498px;
-  text-align: center;
-  vertical-align: middle;
+#nav ul {
+  list-style-type: none; /* Elimina las viñetas de la lista de navegación */
 }
 
-#aside {
-  background-color: rgba(180, 180, 228, 255);
-  display: inline-block;
-  width: 150px;
-  height: 498px;
-
-  line-height: 498px;
-  text-align: center;
-  vertical-align: middle;
+#nav li {
+  display: inline-block; /* Muestra los elementos de la lista en línea (horizontalmente) */
+  padding-top: 80px; /* Espacio superior en los elementos de navegación */
+  margin: 0 100px 20px 100px; /* Margen (superior, lateral, inferior) entre los elementos de navegación */
+  cursor: default; /* Cambia el cursor a defecto (no clickeable) */
+  text-align: center; /* Centra el texto dentro de cada elemento de navegación */
 }
 
+/* Secciones con imágenes de fondo */
+#contenidos {
+  background-image: url("../imgs/book.png"); /* Imagen de fondo para la sección de contenidos */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center 10px; /* Posiciona la imagen al centro y 10px desde la parte superior */
+}
+
+#videos {
+  background-image: url("../imgs/film.png"); /* Imagen de fondo para la sección de videos */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center 10px; /* Posiciona la imagen al centro y 10px desde la parte superior */
+}
+
+#contacto {
+  background-image: url("../imgs/mail.png"); /* Imagen de fondo para la sección de contacto */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center 10px; /* Posiciona la imagen al centro y 10px desde la parte superior */
+}
+
+#nav li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: orange; /* Color de los enlaces en la navegación */
+}
+
+#nav li a:hover {
+  color: white; /* Cambia el color del enlace al pasar el mouse sobre él */
+}
+
+/* Content */
+#content {
+  font-family: Verdana, sans-serif; /* Tipografía utilizada en el contenido principal */
+  font-size: 0.8em; /* Tamaño de fuente del contenido */
+  background-image: url("../imgs/lgrey008.jpg"); /* Imagen de fondo para el contenido */
+  height: 502px; /* Altura fija para la sección de contenido */
+
+  /*
+  Extra
+  Me tomé la libertad de agregar estas 2 propiedades
+  para mejorar el diseño y centrar los artículos
+  */
+  align-content: center; /* Alineación del contenido (puede no tener efecto dependiendo del contexto) */
+  padding: 0px 25px; /* Espaciado interno del contenido (izquierda y derecha) */
+}
+
+/* Articles */
+.article {
+  width: 240px; /* Ancho fijo de cada artículo */
+  border: 1px solid lightgray; /* Borde alrededor de los artículos */
+  background-color: white; /* Color de fondo de los artículos */
+  text-align: center; /* Centra el texto dentro de los artículos */
+  line-height: 1.8em; /* Altura de línea para mejorar la legibilidad del texto */
+  padding: 5px 5px 22px 5px; /* Espaciado interno del artículo */
+  margin: 30px; /* Margen alrededor de los artículos */
+  float: left; /* Permite que los artículos floten a la izquierda */
+}
+
+.article_header {
+  border-bottom: 1px solid #999999; /* Línea inferior para separar el encabezado del artículo */
+  padding: 2px; /* Espaciado interno del encabezado del artículo */
+}
+
+.article img {
+  width: 100%; /* Imágenes ocupan el 100% del ancho del artículo */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.article h2 {
+  padding: 10px; /* Espaciado interno del título del artículo */
+  font-size: 1.2em; /* Tamaño de fuente del título del artículo */
+}
+
+/* Footer */
 #footer {
-  background-color: rgba(237, 166, 166, 255);
-  display: inline-block;
-  width: 980px;
-  height: 20px;
-  margin: 0 310px;
-  text-align: center;
+  clear: both; /* Limpia el flotante de los artículos anteriores */
+  font-size: 0.7em; /* Tamaño de fuente del pie de página */
+  color: white; /* Color del texto del pie de página */
+  text-align: center; /* Centra el texto del pie de página */
+  background-color: #313B44; /* Color de fondo del pie de página */
+  border-top: 6px solid black; /* Línea superior para separar el pie de página del contenido */
+  padding: 15px 0; /* Espaciado interno del pie de página */
 }
 
-#pHeader p {
-  margin-top: 20px;
+#footer a {
+  color: white; /* Color de los enlaces en el pie de página */
 }

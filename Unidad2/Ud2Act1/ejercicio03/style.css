@@ -1,96 +1,120 @@
+/* Santiago Calderon Castaño */
+/* Reiniciamos márgenes y rellenos para consistencia */
 * {
     margin: 0;
     padding: 0;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: white; /* Color de texto */
+    font-family: Arial, sans-serif; /* Fuente utilizada */
 }
 
+/* Estilos para el contenedor principal (#container) */
+/* Definimos dimensiones y centramos el contenedor */
 #container {
     width: 980px;
-    height: 100vh;
-    background-color: red;
-    margin: 0 auto;
+    height: 100vh; /* Altura de la ventana */
+    background-color: red; /* Color de fondo */
+    margin: 0 auto; /* Centramos horizontalmente */
 }
 
+/* Estilos para la cabecera (#header) */
+/* Color de fondo y altura específica */
 #header {
     background-color: rgba(75, 175, 115, 255);
     float: left;
     width: 100%;
-    height: 10vh;
+    height: 10vh; /* Altura de la cabecera */
 }
 
+/* Estilos para el párrafo en la cabecera (#pHeader) */
+/* Centramos el texto en la cabecera */
 #pHeader {
-    width: 100%;
-    /*Centrar el texto*/
-    line-height: 10vh;
-    text-align: center;
+    width: 100%; 
+    line-height: 10vh; /* Centrado vertical del texto */
+    text-align: center; /* Centrado horizontal del texto */
 }
 
+/* Estilos para la barra lateral (#aside) */
+/* Definimos color de fondo y dimensiones */
 #aside {
     background-color: rgba(90, 166, 192, 255);
     float: left;
-    width: 20%;
-    height: 85vh;
+    width: 20%; 
+    height: 85vh; /* Altura de la barra lateral */
 }
 
+/* Estilos para el párrafo en la barra lateral (#pAside) */
+/* Centramos el texto en la barra lateral */
 #pAside {
-    width: 100%;
-    text-align: center;
+    width: 100%; 
+    text-align: center; /* Centrado del texto */
 }
 
+/* Estilos para el área principal (#main) */
+/* Color de fondo y dimensiones del área principal */
 #main {
     background-color: rgba(209, 125, 249, 255);
     float: right;
     width: 80%;
-    height: 85vh;
+    height: 85vh; /* Altura del área principal */
 }
 
+/* Estilos para el párrafo en el área principal (#pMain) */
+/* Centramos el texto en el área principal */
 #pMain {
-    width: 100%;
-    text-align: center;
+    width: 100%; 
+    text-align: center; /* Centrado del texto */
 }
 
+/* Estilos para las secciones (#section1, #section2) */
+/* Definimos bordes, dimensiones y márgenes */
 #section1,
 #section2 {
-    border: 3px solid red;
+    border: 3px solid red; /* Bordes alrededor de las secciones */
     float: left;
-    width: 95%;
-    height: 37vh;
-
-    margin: 1% 2%;
+    width: 95%; 
+    height: 37vh; /* Altura de las secciones */
+    margin: 1% 2%; /* Margen alrededor */
 }
 
+/* Estilos para la primera sección (#section1) */
+/* Añadimos margen superior para separación */
 #section1 {
-    margin-top: 3%;
+    margin-top: 3%; /* Margen superior */
 }
 
-#section1>div {
-    border: 3px solid rgba(43, 25, 252, 255);
+/* Estilos para los divs dentro de la primera sección (#section1 > div) */
+/* Bordes y dimensiones de los divs secundarios */
+#section1 > div {
+    border: 3px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
     float: left;
-    width: 44%;
-    height: 30vh;
-
-    margin: 3% 2.5%;
+    width: 44%; 
+    height: 30vh; /* Altura de los divs */
+    margin: 3% 2.5%; /* Margen alrededor */
 }
 
-#section2>div {
-    border: 3px solid rgba(43, 25, 252, 255);
+/* Estilos para los divs dentro de la segunda sección (#section2 > div) */
+/* Bordes y dimensiones de los divs secundarios */
+#section2 > div {
+    border: 3px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
     float: left;
-    width: 28%;
-    height: 28vh;
-    margin: 3.5% 2.22%;
+    width: 28%; 
+    height: 28vh; /* Altura de los divs */
+    margin: 3.5% 2.22%; /* Margen alrededor */
 }
 
+/* Estilos para el pie de página (#footer) */
+/* Color de fondo y dimensiones del pie de página */
 #footer {
     background-color: rgba(250, 126, 92, 255);
     float: left;
-    width: 100%;
-    height: 5vh;
+    width: 100%; 
+    height: 5vh; /* Altura del pie de página */
 }
 
+/* Estilos para el párrafo en el pie de página (#pFooter) */
+/* Centramos el texto en el pie de página */
 #pFooter {
-    width: 100%;
-
-    line-height: 5vh;
-    text-align: center;
+    width: 100%; 
+    line-height: 5vh; /* Espaciado vertical */
+    text-align: center; /* Centrado del texto */
 }

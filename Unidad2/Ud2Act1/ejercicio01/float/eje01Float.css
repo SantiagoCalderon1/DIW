@@ -1,66 +1,96 @@
-/*Santiago Calderon Castaño*/
+/* Santiago Calderon Castaño */
+
+/* Reiniciamos los márgenes y el relleno de todos los elementos a 0 
+para asegurar que el diseño sea consistente en todos los navegadores */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: rgba(245, 245, 220, 255);
-    text-align: center;
-  }
-  
-  #header {
-    background-color: rgba(239, 193, 166, 255);
-    float: left;
-    width: 980px;
-    height: 80px;
-    margin: 0 310px;
-  }
-  
-  #nav {
-    background-color: rgba(238, 239, 166, 255);
-    width: 980px;
-    height: 21px;
-    
-  }
-  
-  #main {
-    background-color: rgba(191, 244, 160, 255);
-    float: left;
-    width: 980px;
-    height: 500px;
-    margin: 0 310px;
-  }
-  #section {
-    background-color: rgba(160, 240, 244, 255);
-    float: left;
-    width: 782px;
-    height: 498px;
-  }
-  #aside {
-    background-color: rgba(180, 180, 228, 255);
-    float: right;
-    width: 194px;
-    height: 498px;
-  }
-  #footer {
-    background-color: rgba(237, 166, 166, 255);
-    float: left;
-    width: 980px;
-    height: 20px;
-    margin: 0 310px;
-  }
-  
-  #pHeader p {
-    margin-top: 20px;
-  }
-  
-  #pNav {
-    margin-top: 21px;
-  }
-  
-  #pSection,
-  #pAside {
-    padding-top: 250px;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del body */
+/* Aplicamos un color de fondo beige claro y centramos el texto para el 
+contenido de la página */
+body {
+  background-color: rgba(245, 245, 220, 255);
+  text-align: center;
+}
+
+/* Estilos del encabezado (#header) */
+/* Establecemos un color de fondo crema, usamos float para alinear el 
+elemento, fijamos el ancho, la altura y centramos horizontalmente */
+#header {
+  background-color: rgba(239, 193, 166, 255);
+  float: left;
+  width: 980px;
+  height: 80px;
+  margin: 0 310px; /* Centrado horizontal */
+}
+
+/* Estilos para la barra de navegación (#nav) */
+/* Asignamos un color de fondo amarillo claro, un ancho fijo, y una altura 
+mínima */
+#nav {
+  background-color: rgba(238, 239, 166, 255);
+  width: 980px;
+  height: 21px;
+}
+
+/* Estilos para el área principal (#main) */
+/* Usamos un color de fondo verde claro, float para alinearlo y le damos 
+un ancho fijo */
+#main {
+  background-color: rgba(191, 244, 160, 255);
+  float: left;
+  width: 980px;
+  height: 500px;
+  margin: 0 310px; /* Centrado horizontal */
+}
+
+/* Estilos de la sección principal (#section) */
+/* Establecemos un fondo azul claro, utilizamos float para alinearlo a la 
+izquierda y ajustamos sus dimensiones */
+#section {
+  background-color: rgba(160, 240, 244, 255);
+  float: left;
+  width: 782px;
+  height: 498px;
+}
+
+/* Estilos de la barra lateral (#aside) */
+/* Color de fondo azul suave, flotado a la derecha y con ancho específico */
+#aside {
+  background-color: rgba(180, 180, 228, 255);
+  float: right;
+  width: 194px;
+  height: 498px;
+}
+
+/* Estilos del pie de página (#footer) */
+/* Color de fondo rosado, ancho fijo, altura baja, y alineado usando float */
+#footer {
+  background-color: rgba(237, 166, 166, 255);
+  float: left;
+  width: 980px;
+  height: 20px;
+  margin: 0 310px; /* Centrado horizontal */
+}
+
+/* Ajustes de márgenes para el texto dentro del encabezado (#pHeader p) */
+/* Añade un margen superior para centrar verticalmente el texto */
+#pHeader p {
+  margin-top: 20px;
+}
+
+/* Ajustes de márgenes para el texto dentro de la barra de navegación (#pNav) */
+/* Añade un margen superior para alinear el contenido en el centro vertical */
+#pNav {
+  margin-top: 21px;
+}
+
+/* Ajustes de relleno superior para el contenido en la sección (#pSection) y 
+la barra lateral (#pAside) */
+/* Añade relleno superior para centrar el contenido verticalmente */
+#pSection,
+#pAside {
+  padding-top: 250px;
+}

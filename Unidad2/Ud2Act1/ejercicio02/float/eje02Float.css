@@ -1,66 +1,102 @@
-/*Santiago Calderon Castaño*/
+/* Santiago Calderon Castaño */
+/* Reiniciamos los márgenes y rellenos en todos los elementos 
+   para evitar inconsistencias entre navegadores */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: rgba(245, 245, 220, 255);
-    text-align: center;
-  }
-  
-  #header {
-    background-color: rgba(239, 193, 166, 255);
-    float: left;
-    width: 980px;
-    height: 80px;
-    margin: 0 310px;
-  }
-  
-  #nav {
-    background-color: rgba(238, 239, 166, 255);
-    float: left;
-    width: 180px;
-    height: 250px;
-  }
-  
-  #main {
-    background-color: rgba(191, 244, 160, 255);
-    float: left;
-    width: 980px;
-    height: 500px;
-    margin: 0 310px;
-  }
-  #section {
-    background-color: rgba(160, 240, 244, 255);
-    float: left;
-    width: 650px;
-    height: 498px;
-  }
-  #aside {
-    background-color: rgba(180, 180, 228, 255);
-    float: right;
-    width: 150px;
-    height: 498px;
-  }
-  #footer {
-    background-color: rgba(237, 166, 166, 255);
-    float: left;
-    width: 980px;
-    height: 20px;
-    margin: 0 310px;
-  }
-  
-  #pHeader p {
-    margin-top: 20px;
-  }
-  
-  #pNav {
-    margin-top: 21px;
-  }
-  
-  #pSection,
-  #pAside {
-    padding-top: 250px;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+/* Fondo beige claro para el área de la página y centrado del contenido */
+body {
+  background-color: rgba(245, 245, 220, 255);
+  text-align: center;
+}
+
+/* Estilos para la cabecera (#header) */
+/* Fondo melocotón claro, tamaño fijo y centrado horizontal mediante margen */
+#header {
+  background-color: rgba(239, 193, 166, 255);
+  float: left;
+  /* Alineación a la izquierda para efectos de diseño */
+  width: 980px;
+  height: 80px;
+  margin: 0 310px;
+  /* Centramos horizontalmente */
+}
+
+/* Estilos para la barra de navegación (#nav) */
+/* Fondo amarillo claro y tamaño ajustado para la barra lateral de navegación */
+#nav {
+  background-color: rgba(238, 239, 166, 255);
+  float: left;
+  /* Alineación a la izquierda para formar una columna */
+  width: 180px;
+  height: 250px;
+  /* Altura suficiente para acomodar elementos de navegación */
+}
+
+/* Estilos para el área principal (#main) */
+/* Fondo verde claro, tamaño fijo y centrado horizontalmente */
+#main {
+  background-color: rgba(191, 244, 160, 255);
+  float: left;
+  /* Alineación a la izquierda para organizar los elementos */
+  width: 980px;
+  height: 500px;
+  margin: 0 310px;
+  /* Centrado horizontal */
+}
+
+/* Estilos para la sección de contenido principal (#section) */
+/* Fondo azul claro y tamaño fijo para el área de contenido */
+#section {
+  background-color: rgba(160, 240, 244, 255);
+  float: left;
+  /* Alineación a la izquierda para formar una columna junto a #aside */
+  width: 650px;
+  height: 498px;
+  /* Altura ajustada para emparejar con #aside */
+}
+
+/* Estilos para el área lateral (aside) (#aside) */
+/* Fondo azul grisáceo, ancho más pequeño para diferenciarlo de #section */
+#aside {
+  background-color: rgba(180, 180, 228, 255);
+  float: right;
+  /* Alineación a la derecha para que esté junto a #section */
+  width: 150px;
+  height: 498px;
+  /* Misma altura que #section para mantener simetría */
+}
+
+/* Estilos para el pie de página (#footer) */
+/* Fondo rojo claro, tamaño fijo y centrado horizontalmente */
+#footer {
+  background-color: rgba(237, 166, 166, 255);
+  float: left;
+  /* Alineación a la izquierda para estructurar la página */
+  width: 980px;
+  height: 20px;
+  margin: 0 310px;
+  /* Centrado horizontal */
+}
+
+/* Estilos para el párrafo en la cabecera (#pHeader p) */
+/* Añadimos un margen superior para separar el texto visualmente */
+#pHeader p {
+  margin-top: 20px;
+}
+
+/* Estilos para el párrafo en la navegación (#pNav) */
+/* Espaciado superior para centrar el texto dentro de la barra de navegación */
+#pNav {
+  margin-top: 21px;
+}
+
+/* Estilos para el texto principal y el área lateral (#pSection, #pAside) */
+/* Añadimos relleno superior para centrar el texto verticalmente en ambos */
+#pSection,
+#pAside {
+  padding-top: 250px;
+}

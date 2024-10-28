@@ -1,123 +1,149 @@
+/* Santiago Calderon Castaño */
+/* Reiniciamos márgenes y rellenos para consistencia */
 * {
     margin: 0;
     padding: 0;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: white; /* Color de texto */
+    font-family: Arial, sans-serif; /* Fuente utilizada */
 }
 
+/* Estilos para el contenedor principal (#container) */
+/* Definimos dimensiones y centramos el contenedor */
 #container {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+    width: 100%; /* Ancho total */
+    height: 100vh; /* Altura de la ventana */
+    margin: 0 auto; /* Centramos horizontalmente */
 }
 
+/* Estilos para la cabecera (#header) */
+/* Color de fondo y dimensiones de la cabecera */
 #header {
     background-color: rgba(75, 175, 115, 255);
     float: left;
-    width: 100%;
-    height: 8vh;
-
-    text-align: center;
+    width: 100%; /* Ancho total */
+    height: 8vh; /* Altura de la cabecera */
+    text-align: center; /* Centramos el texto */
 }
 
+/* Estilos para la navegación en la cabecera (#navHeader) */
+/* Definimos el estilo de los elementos de lista en la navegación */
 #navHeader > li {
-    display: inline;
-    font-size: 20px;
-    /*Centrar el texto*/
-    line-height: 8vh;
-    padding: 0 2.5%;
+    display: inline; /* Mostramos elementos en línea */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 8vh; /* Centrado vertical */
+    padding: 0 2.5%; /* Espaciado horizontal */
 }
 
+/* Estilos para la barra lateral (#aside) */
+/* Color de fondo y dimensiones de la barra lateral */
 #aside {
     background-color: rgba(90, 166, 192, 255);
     float: left;
-    width: 20%;
-    height: 87%;
+    width: 20%; /* Ancho de la barra lateral */
+    height: 87%; /* Altura de la barra lateral */
 }
 
+/* Estilos para la navegación en la barra lateral (#navAside) */
+/* Estilo de los elementos de lista en la barra lateral */
 #navAside > li {
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
+    font-size: 30px; /* Tamaño de fuente */
+    width: 100%; /* Ancho total */
+    text-align: center; /* Centramos el texto */
+    margin-top: 100px; /* Espaciado superior */
 }
 
+/* Estilos para el área principal (#main) */
+/* Color de fondo y dimensiones del área principal */
 #main {
     background-color: rgba(209, 125, 249, 255);
     float: right;
-    width: 80%;
-    height: 87%;
+    width: 80%; /* Ancho del área principal */
+    height: 87%; /* Altura del área principal */
 }
 
+/* Estilos para el párrafo en el área principal (#pMain) */
+/* Centramos el texto en el área principal */
 #pMain {
-    width: 100%;
-    text-align: center;
+    width: 100%; /* Ancho total */
+    text-align: center; /* Centramos el texto */
 }
 
+/* Estilos para las secciones (#section1, #section2) */
+/* Definimos bordes, dimensiones y márgenes */
 #section1,
 #section2 {
-    border: 5px solid red;
+    border: 5px solid red; /* Bordes alrededor de las secciones */
     float: left;
-    width: 95%;
-    height: 37vh;
-
-    margin: 1% 2%;
+    width: 95%; /* Ancho de las secciones */
+    height: 37vh; /* Altura de las secciones */
+    margin: 1% 2%; /* Margen alrededor */
 }
 
+/* Estilos para la primera sección (#section1) */
+/* Añadimos margen superior para separación */
 #section1 {
-    margin-top: 3%;
+    margin-top: 3%; /* Margen superior */
 }
 
-#section1>div {
-    border: 5px solid rgba(43, 25, 252, 255);
+/* Estilos para los divs dentro de la primera sección (#section1 > div) */
+/* Bordes y dimensiones de los divs secundarios */
+#section1 > div {
+    border: 5px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
     float: left;
-    width: 43%;
-    height: 30vh;
-
-    margin: 3% 2.5%;
+    width: 43%; /* Ancho de los divs */
+    height: 30vh; /* Altura de los divs */
+    margin: 3% 2.5%; /* Margen alrededor */
 }
 
-#section2>div {
-    border: 5px solid rgba(43, 25, 252, 255);
+/* Estilos para los divs dentro de la segunda sección (#section2 > div) */
+/* Bordes y dimensiones de los divs secundarios */
+#section2 > div {
+    border: 5px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
     float: left;
-    width: 27%;
-    height: 28vh;
-    margin: 3.5% 2.22%;
+    width: 27%; /* Ancho de los divs */
+    height: 28vh; /* Altura de los divs */
+    margin: 3.5% 2.22%; /* Margen alrededor */
 }
 
+/* Estilos para el pie de página (#footer) */
+/* Color de fondo y dimensiones del pie de página */
 #footer {
     background-color: rgba(250, 126, 92, 255);
     float: left;
-    width: 100%;
-    height: 5vh;
+    width: 100%; /* Ancho total */
+    height: 5vh; /* Altura del pie de página */
 }
 
+/* Estilos para el párrafo en el pie de página (#pFooter) */
+/* Centramos el texto en el pie de página */
 #pFooter {
-    width: 100%;
-
-    height: 5vh;
-    line-height: 5vh;
-    text-align: center;
+    width: 100%; 
+    height: 5vh; /* Altura del párrafo */
+    line-height: 5vh; /* Espaciado vertical */
+    text-align: center; /* Centramos el texto */
 }
 
+/* Estilos responsivos para pantallas grandes */
 @media (min-width: 1090px) {
+    /* Estilos para la cabecera en pantallas grandes */
     #header {
         background-color: rgba(75, 175, 115, 255);
         float: left;
-        width: 100%;
-        height: 8vh;
-        text-align: left;
+        width: 100%; 
+        height: 8vh; 
+        text-align: left; /* Alineación del texto */
     }
 
+    /* Estilos para la navegación en la cabecera en pantallas grandes */
     #navHeader > li {
-        display: inline;
-        font-size: 20px;
-        /*Centrar el texto*/
-        line-height: 8vh;
-        padding: 0 2.5%;
+        display: inline; /* Mostramos elementos en línea */
+        font-size: 20px; 
+        line-height: 8vh; /* Centrado vertical */
+        padding: 0 2.5%; /* Espaciado horizontal */
     }
 
-    #navHeader > li:first-child{
-        color: blue;
+    /* Estilo específico para el primer elemento de navegación */
+    #navHeader > li:first-child {
+        color: blue; /* Color azul para el primer elemento */
     }
 }
