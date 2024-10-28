@@ -52,6 +52,15 @@
     margin-top: 100px; /* Espaciado superior */
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: blue; /** Se supone que esto  cambie el color cuando se da click pero no me funciona :(*/
+}
+
 /* Estilos para el área principal (#main) */
 /* Color de fondo y dimensiones del área principal */
 #main {
@@ -123,27 +132,3 @@
     text-align: center; /* Centramos el texto */
 }
 
-/* Estilos responsivos para pantallas grandes */
-@media (min-width: 1090px) {
-    /* Estilos para la cabecera en pantallas grandes */
-    #header {
-        background-color: rgba(75, 175, 115, 255);
-        float: left;
-        width: 100%; 
-        height: 8vh; 
-        text-align: left; /* Alineación del texto */
-    }
-
-    /* Estilos para la navegación en la cabecera en pantallas grandes */
-    #navHeader > li {
-        display: inline; /* Mostramos elementos en línea */
-        font-size: 20px; 
-        line-height: 8vh; /* Centrado vertical */
-        padding: 0 2.5%; /* Espaciado horizontal */
-    }
-
-    /* Estilo específico para el primer elemento de navegación */
-    #navHeader > li:first-child {
-        color: blue; /* Color azul para el primer elemento */
-    }
-}
