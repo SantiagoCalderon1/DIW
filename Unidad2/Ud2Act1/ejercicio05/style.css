@@ -9,14 +9,14 @@ h1, h2, h4, #nav > ul > li {
     font-family: Arial, sans-serif; /* Fuente utilizada */
 }
 
-/* Estilos para el contenedor principal (#container) */
+/* Estilos para el contenedor principal  */
 #container {
     background-color: #fff; 
-    width: 960px; /* Ancho del contenedor */
+    width: 960px; 
     margin: 0 auto; /* Centramos horizontalmente */
 }
 
-/* Estilos para la cabecera (#header) */
+/* Estilos para la cabecera  */
 #header {
     border: 2px solid #cdcdcd; /* Borde alrededor de la cabecera */
     background-color: #fffbba; /* Color de fondo */
@@ -26,7 +26,7 @@ h1, h2, h4, #nav > ul > li {
     margin-top: 15px; /* Espacio superior */
 }
 
-/* Estilos para el título dentro de la cabecera (#header > h1) */
+/* Estilos para el título dentro de la cabecera */
 #header > h1 {
     font-size: 36px; 
     color: #000; 
@@ -37,7 +37,7 @@ h1, h2, h4, #nav > ul > li {
     padding-left: 15px; /* Espacio a la izquierda */
 }
 
-/* Estilos para la barra de navegación (#nav) */
+/* Estilos para la barra de navegación  */
 #nav {
     border: 2px solid #cdcdcd; /* Borde alrededor de la barra */
     background-color: #cdcdcd; 
@@ -48,7 +48,7 @@ h1, h2, h4, #nav > ul > li {
     margin-left: 0; 
 }
 
-/* Estilos para los elementos de lista en la navegación (#nav > ul > li) */
+/* Estilos para los elementos de lista en la navegación */
 #nav > ul > li {
     display: inline; /* Mostramos elementos en línea */
     font-weight: bold; /* Negrita */
@@ -56,25 +56,25 @@ h1, h2, h4, #nav > ul > li {
     padding-left: 15px; /* Espacio a la izquierda */
 }
 
-/* Estilos para los enlaces dentro de la navegación (#nav > ul > li > a) */
+/* Estilos para los enlaces dentro de la navegación */
 #nav > ul > li > a {
     text-decoration: none; /* Sin subrayado */
     color: blue; /* Color del texto */
 }
 
-/* Estilos para el primer enlace en la navegación (#nav > ul > li:first-child > a) */
+/* Estilos para el primer enlace en la navegación */
 #nav > ul > li:first-child > a {
     color: black; /* Color específico para el primer enlace */
 }
 
-/* Estilos para la sección principal (#sectionPrincipal) */
+/* Estilos para la sección principal  */
 #sectionPrincipal {
     float: left; /* Alineación a la izquierda */
     width: 600px; /* Ancho de la sección principal */
     margin: 15px; 
 }
 
-/* Estilos para los artículos dentro de la sección principal (.article) */
+/* Estilos para los artículos dentro de la sección principal  */
 .article {
     border: 2px solid #cdcdcd; /* Borde alrededor del artículo */
     background-color: #fffbba; /* Color de fondo */
@@ -85,12 +85,12 @@ h1, h2, h4, #nav > ul > li {
     padding: 15px; 
 }
 
-/* Estilos para la fecha de publicación (.fechaPublicacion) */
+/* Estilos para la fecha de publicación  */
 .fechaPublicacion {
     color: #cdcdcd; /* Color del texto */
 }
 
-/* Estilos para la imagen del artículo (#imgArticle1) */
+/* Estilos para la imagen del artículo */
 #imgArticle1 {
     border: 1px solid black; /* Borde alrededor de la imagen */
     width: 98%; 
@@ -98,24 +98,24 @@ h1, h2, h4, #nav > ul > li {
     padding: 5px; 
 }
 
-/* Estilos para la imagen dentro de #imgArticle1 (#imgArticle1 > img) */
+/* Estilos para la imagen dentro de   */
 #imgArticle1 > img {
     width: 100%; 
 }
 
-/* Estilos para la cita dentro de #imgArticle1 (#imgArticle1 > cite) */
+/* Estilos para la cita dentro de   */
 #imgArticle1 > cite {
     float: left; /* Alineación a la izquierda */
     width: 100%; 
 }
 
-/* Estilos para la sección de comentarios (.comentarios) */
+/* Estilos para la sección de comentarios  */
 .comentarios {
     width: 100%; 
     text-align: end; /* Alineación a la derecha */
 }
 
-/* Estilos para la barra lateral (#aside) */
+/* Estilos para la barra lateral  */
 #aside {
     background-color: #cdcdcd; /* Color de fondo */
     float: right; /* Alineación a la derecha */
@@ -125,13 +125,13 @@ h1, h2, h4, #nav > ul > li {
     padding: 15px; /* Espaciado interno */
 }
 
-/* Estilos para los párrafos dentro de la barra lateral (#aside > p) */
+/* Estilos para los párrafos dentro de la barra lateral  */
 #aside > p {
     width: 80%; 
     height: 100%;
 }
 
-/* Estilos para el pie de página (#footer) */
+/* Estilos para el pie de página  */
 #footer {
     display: inline-block; /* Muestra como bloque en línea */
     width: 100%;
@@ -140,10 +140,10 @@ h1, h2, h4, #nav > ul > li {
     line-height: 40px; /* Centramos verticalmente */
 }
 
-/* Estilos para la línea en el pie de página (#lineaFooter) */
+/* Estilos para la línea en el pie de página*/
 #lineaFooter {
     width: 100%; 
     height: 3px; 
     background-color: #cdcdcd; /* Color de fondo */
-    margin-top: 15px; /* Espacio superior */
+    margin-top: 15px; 
 }
