@@ -1,0 +1,346 @@
+/* Santiago Calderon Castaño */
+:root {
+    --main-color: #40110D;
+    --highlight-color: #F2DABD;
+    --highlight-translucent: rgba(242, 218, 189, 0.5);
+}
+
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('../estilos/imgs/contenido/backgroundMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Diseños del header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+}
+
+/* Logo */
+#logo {
+    background-image: url('../estilos/imgs/LogoPanaderíaSinTexto.svg');
+    background-position: center;
+    background-size: cover;
+
+    width: 100px;
+    height: 100px;
+}
+
+/* Navegación */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Lista de navegación */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Enlaces del menú */
+header nav ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+header nav ul li a:visited {
+    border-bottom: 1px solid  var(--main-color);
+    font-weight: bold;
+}
+
+header nav ul li a:active {
+    border-bottom: 1px solid var(--main-color);
+    font-weight: bold;
+
+}
+
+header nav ul li a:focus {
+    border-bottom: 2px solid var(--main-color);
+    font-weight: bold;
+}
+
+/* Contenedor de búsqueda */
+#busqueda {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Input de búsqueda */
+#buscar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    margin-left: 30px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Botón de búsqueda */
+#busqueda button {
+    background-color: var(--main-color);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    padding: 8px 12px;
+}
+
+#busqueda button:hover {
+    background-color: var(--highlight-color);
+    color: var(--main-color);
+}
+
+/* Menú de navegación lateral */
+#container>nav {
+    float: left;
+
+    width: 12%;
+    height: 80vh;
+}
+
+#container>nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container>nav ul li {
+    background-color: var(--highlight-translucent);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#container>nav ul li:hover {
+    background-color: var(--highlight-color);
+}
+
+#container>nav ul li a {
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+    border-radius: 5px;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+#container>nav ul li img {
+    border-radius: 15px;
+
+    width: 150px;
+    height: 150px;
+}
+
+/* Diseños del contenido principal */
+main {
+    float: left;
+
+    width: 70%;
+    height: 80vh;
+}
+
+main article {
+    color: var(--main-color);
+
+    justify-content: center;
+    flex-direction: column;
+
+    width: 35%;
+}
+
+main article {
+    margin-top: 25px;
+}
+
+main p {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+main article p:last-child {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Diseños del contenido lateral */
+aside {
+    float: right;
+    overflow-y: scroll;
+
+    width: 15%;
+    height: 80vh;
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Redes sociales */
+#iconFacebook,
+#iconInstagram,
+#iconTiktok,
+#iconWhatsapp,
+#iconYoutube {
+    background-position: center;
+    background-size: cover;
+
+    width: 50px;
+    height: 50px;
+}
+
+#iconFacebook {
+    background-image: url('../estilos/imgs/iconos/facebook.png');
+
+}
+
+#iconInstagram {
+    background-image: url('../estilos/imgs/iconos/instagram.png');
+}
+
+#iconTiktok {
+    background-image: url('../estilos/imgs/iconos/tiktok.png');
+}
+
+#iconWhatsapp {
+    background-image: url('../estilos/imgs/iconos/whatsapp.png');
+}
+
+#iconYoutube {
+    background-image: url('../estilos/imgs/iconos/youtube.png');
+}
+
+aside ul li {
+    list-style: none;
+}
+
+aside ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+
+    margin-top: 5px;
+}
+
+aside ul li,
+aside article,
+h2 {
+    background-color: var(--highlight-translucent);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+aside h2 {
+    background-color: var(--highlight-color);
+}
+
+aside ul li:hover,
+aside article:hover {
+    background-color: var(--highlight-color);
+}
+
+aside section article p,
+aside section ul li a {
+    background-color: var(--main-color);
+    color: #fff;
+
+    margin: 10px 0px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+aside article img {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 10px;
+}
+
+
+aside section li:last-child {
+    margin-bottom: 20px;
+}
+
+/* Prueba degradado */
+aside {
+    position: relative;
+    box-shadow: inset 0px 20px 15px -15px rgba(242, 218, 189, 1),
+        inset 0px -20px 15px -15px rgba(242, 218, 189, 1);
+}
+
+/* Diseños del pie de página */
+footer {
+    background-color: var(--highlight-color);
+    clear: both;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 7vh;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+footer p {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px;
+}
+
+footer ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+}
