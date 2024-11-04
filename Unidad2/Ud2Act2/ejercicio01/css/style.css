@@ -18,17 +18,18 @@ body {
     /* Centra el texto en el body */
     background: linear-gradient(to bottom, rgb(227, 76, 38) 0%, rgba(240, 101, 41, 0) 90%);
     /* Color degradado de fondo  */
+
 }
 
 /* Page container */
 #page {
-    margin-top: 20px;
     width: 960px;
     /* Ancho fijo para el contenedor de la página */
     margin: 0 auto;
     /* Centra el contenedor horizontalmente */
     text-align: left;
     /* Alineación de texto a la izquierda para el contenido */
+    box-shadow: 10px 10px 10px gray;
 }
 
 /* Header */
@@ -83,8 +84,8 @@ nav li {
 }
 
 nav > li > img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     float: left;
 }
 
@@ -106,60 +107,42 @@ main {
     font-family: Verdana, sans-serif;
     /* Tipografía utilizada en el contenido */
     font-size: 0.8em;
+    /* background-color: red; */
     background-color: #ffffff;
     height: 502px;
     /* Altura fija para el contenido */
-
-    /*
-    Extra
-    Me tomé la libertad de agregar estas 2 propiedades
-    para mejorar el diseño y centrar los artículos
-    */
-    padding: 0px 25px;
-    /* Espaciado interno del contenido */
 }
 
 /* Articles */
 article {
-    width: 240px;
-    border: 1px solid lightgray; /* Borde alrededor de los artículos */
-    background-color: white; /* Color de fondo de los artículos */
+    align-items: center;
+    margin: 10px 30px;
+    width: 250px;
+    height: 520px;
     text-align: center; /* Centra el texto dentro de los artículos */
     line-height: 1.8em; /* Altura de línea para mejorar la legibilidad */
-    padding: 5px 5px 22px 5px; /* Espaciado interno del artículo */
-    margin: 30px; /* Margen alrededor de los artículos */
     float: left; /* Permite que los artículos floten a la izquierda */
 
-    border-width: 20px; /* Ancho del borde */
+    border-width: 55px 30px; /* Ancho del borde */
     border-style: solid; /* Estilo del borde (necesario para border-image) */
 
-    border-image: url('../imgs/fondoSamsung.png') 130 stretch; /* URL de la imagen y valores de recorte */
-
+    border-image-source: url('../recursos/movil.png'); /* URL de la imagen y valores de recorte */
+    border-image-slice: 70; /* Controla cómo se recorta la imagen */
 }
 
 
-
-article > header {
-    border-bottom: 1px solid #999999;
-    /* Línea inferior para separar el encabezado del artículo */
-    padding: 2px;
-    /* Espaciado interno del encabezado del artículo */
-}
-  
-
-
-article > header > img {
+article  header  img {
     width: 100%;
     /* Imágenes ocupan el 100% del ancho del artículo */
-    height: auto;
+    height: 150px;
     /* Mantiene la proporción de la imagen */
 }
 
-article > h2 {
-    padding: 10px;
+article  h2 {
     /* Espaciado interno del título del artículo */
     font-size: 1.2em;
     /* Tamaño de fuente del título */
+    text-shadow: 2px 2px 2px gray;
 }
 
 /* Footer */
@@ -179,7 +162,7 @@ footer {
     /* Espaciado interno del pie de página */
 
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
 }
 
 footer a {
