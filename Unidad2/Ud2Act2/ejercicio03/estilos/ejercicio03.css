@@ -1,0 +1,270 @@
+/* Santiago Calderon Castaño */
+:root {
+    --color--purple: #7110f6;
+    --color--gray: #f5f5f5;
+    --color--white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color--white);
+}
+
+#page1 {
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}
+
+#page1 {
+    width: 1500px;
+    height: 100vh;
+
+    margin: 0 auto;
+}
+
+/* Estilos para el header */
+
+#page1 header {
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+
+    line-height: 10vh;
+}
+
+#page1 header h1 {
+    background-color: var(--color--white);
+    float: left;
+    width: 40%;
+    height: 10vh;
+}
+
+#page1 header nav {
+    background-color: var(--color--gray);
+    float: right;
+    width: 60%;
+    height: 10vh;
+}
+
+#page1 header nav ul {
+    float: right;
+    margin-right: 140px;
+}
+
+#page1 header nav ul li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+#page1 header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-nav {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn-iniciarSesion {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+#page1 header nav ul li #btn-descargarApp {
+    background-color: var(--color--purple);
+    color: white;
+    /* Otra opcion es poner !important y ya no debo especificar toda la ruta, pero eso como última opción */
+    font-weight: bold;
+}
+
+/* Estilos para main */
+
+#page1 main {
+    width: 100%;
+    height: 90vh;
+}
+
+#page1 main .section1 {
+    background-color: var(--color--white);
+    float: left;
+    width: 40%;
+    height: 90vh;
+
+    margin-top: -4px;
+    /* No logro detectar de donde sale ese espacio de 4px si ninguno tiene margin*/
+}
+
+#page1 main .section2 {
+    background-color: var(--color--gray);
+    float: right;
+    width: 60%;
+    height: 90vh;
+    margin-top: -4px;
+    /* No logro detectar de donde sale ese espacio de 4px si ninguno tiene margin*/
+}
+
+#page1 main .section1 .article1 {
+    width: 75%;
+    margin-top: 100px;
+}
+
+#page1 main .section1 .article1 p:first-child {
+    color: var(--color--purple);
+    font-size: 18px;
+}
+
+#page1 main .section1 .article1 #nuevo {
+    background-color: var(--color--purple);
+    color: var(--color--white);
+    padding: 10px;
+    border-radius:5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#page1 main .section1 .article1 h2 {
+    font-weight:bolder;
+    font-size: 65px;
+    margin-top: 40px;
+}
+
+#page1 main .section1 .article1 h2 #punto {
+    color: var(--color--purple);
+}
+
+.section1 .article1>p:nth-of-type(2) {
+    font-size: 26px;
+    width: 95%;
+    margin-top: 40px;
+
+}
+
+.section1 .article1 #abreCuenta {
+    background-color: var(--color--purple);
+    color: var(--color--white);
+
+    font-size: 18px;
+    font-weight: 100;
+
+    width: 50%;
+    height: 100%;
+
+    border-radius: 10px;
+    border: none;
+    padding: 22px;
+
+    margin-top: 40px;
+}
+
+.section1 .article1 #tiendaAplicaciones {
+    width: 100%;
+    margin-top: 90px;
+
+}
+
+.section1 .article1 #tiendaAplicaciones .icon {
+    background-position: center;
+    background-size: cover;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.section1 .article1 #appStore .icon {
+    background-image: url('../estilos/iconos/appStore.png');
+}
+
+.section1 .article1 #playStore .icon {
+    background-image: url('../estilos/iconos/playStore.png');
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.section1 .article1 .consigueApp {
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+.section1 .article1 .consigueApp p {
+    float: left;
+    width: 110px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.section2 .article2 #circulo{
+    background-image: url('/DIW/DIW/Unidad2/Ud2Act2/ejercicio03/estilos/imgs/mujerCirculo.png');
+    background-position: center;
+    background-size: cover;
+    width: 620px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page2 {
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+}
+
+#page3 {
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#page4 {
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+}
+
+#page5 {
+    background-color: brown;
+    width: 100%;
+    height: 100vh;
+}
