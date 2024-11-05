@@ -15,11 +15,6 @@ body {
     background-color: var(--color--white);
 }
 
-#page1 {
-    background-color: red;
-    width: 100%;
-    height: 100vh;
-}
 
 #page1 {
     width: 1500px;
@@ -206,7 +201,7 @@ body {
 }
 
 .section2 .article2 #circulo{
-    background-image: url('/DIW/DIW/Unidad2/Ud2Act2/ejercicio03/estilos/imgs/mujerCirculo.png');
+    background-image: url('../estilos/imgs/mujerCirculo.png');
     background-position: center;
     background-size: cover;
     width: 620px;
@@ -216,39 +211,122 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Diseños página 2 */
 
 #page2 {
-    background-color: blue;
-    width: 100%;
+    background-color: var(--color--white);
+    width: 1500px;
     height: 100vh;
+    margin: 0 auto;
 }
+
+#page2 main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#page2 main section article{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+
+#page2 main section article:nth-of-type(1) #movilTuDecides{
+    background-image: url('../estilos/imgs/movilTuDecides.png');
+    background-position: center;
+    background-size: cover;
+    width: 570px;
+    height: 680px;
+}
+
+#page2 main section article h2{
+    font-weight:bolder;
+    font-size: 65px;
+    margin-top: 40px;
+
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+
+
+#page2 main section article .count{
+    float: left;
+    font-size: 22px;
+    color: var(--color--purple);
+    font-weight: bold;
+    margin-top: 30px;
+    width: 10%;
+}
+
+
+#page2 main section article h3{
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 90%;
+    text-align: left;
+}
+
+
+
+#page2 main section article .text{
+    float: left;
+    font-size: 20px;
+    margin-top: 20px;
+    border-left: 3px solid gray;
+    padding: 5px 0 10px 50px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+#page2 main section article .text:last-child{
+    border-left:none;
+}
+
+#page2 main section article  #parrafo1{
+    width: 400px;
+}
+
+#page2 main section article  #parrafo2{
+    width: 470px;
+}
+
+#page2 main section article  #parrafo3{
+    width: 510px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #page3 {
     background-color: yellow;
