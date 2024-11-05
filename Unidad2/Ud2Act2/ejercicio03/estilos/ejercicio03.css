@@ -286,8 +286,12 @@ body {
     border-left:none;
 }
 
+#page2 main section article .text{
+    width: 100%;
+}
+
 #page2 main section article  #parrafo1{
-    width: 400px;
+    width: 390px;
 }
 
 #page2 main section article  #parrafo2{
