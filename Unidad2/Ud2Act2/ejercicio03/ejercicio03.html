@@ -1,113 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banca Digital</title>
     <link rel="stylesheet" href="estilos/ejercicio03.css" />
-  </head>
+</head>
 
-  <body>
-    <div id="page1">
-      <header>
-        <h1>Banca Digital.</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Personas</a></li>
-            <li><a href="#">Empresas</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li>
-              <a href="#" id="btn-iniciarSesion" class="btn-nav"
-                >Iniciar sesion</a
-              >
-            </li>
-            <li>
-              <a href="#" id="btn-descargarApp" class="btn-nav"
-                >Descarga la app</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="section1">
-          <article class="article1">
-            <p>
-              <span id="nuevo">Nuevo</span> Alquiere nuestra nueva tarjeta de
-              crédito
-            </p>
-            <h2>La mejor Banca Digital<span id="punto">.</span></h2>
-            <p>
-              Dile adiós a los bancos tradicionales y disfruta de los beneficios
-              de un banco 100% digital.
-            </p>
-            <button type="button" id="abreCuenta" onclick="hacerAlgo()">
-              Abre tu cuenta hoy
-            </button>
-            <div id="tiendaAplicaciones">
-              <div id="appStore" class="consigueApp">
-                <div id="iconoApple" class="icon"></div>
-                <p>Consíguela en <span class="textBold">App Store</span></p>
-              </div>
-              <div id="playStore" class="consigueApp">
-                <div id="iconoGoogle" class="icon"></div>
-                <p>Disponible en <span class="textBold">Google Play</span></p>
-              </div>
+<body>
+    <main>
+        <!-- Página 1 -->
+        <div id="page1">
+            <header>
+                <h1>Banca Digital.</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Personas</a></li>
+                        <li><a href="#">Empresas</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li>
+                            <a href="#" id="btn-iniciarSesion" class="btn-nav">Iniciar sesión</a>
+                        </li>
+                        <li>
+                            <a href="#" id="btn-descargarApp" class="btn-nav">Descarga la app</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="section1">
+                <article class="article1">
+                    <p>
+                        <span id="nuevo">Nuevo</span> Adquiere nuestra nueva tarjeta de crédito
+                    </p>
+                    <h2>La mejor Banca Digital<span class="punto">.</span></h2>
+                    <p>
+                        Dile adiós a los bancos tradicionales y disfruta de los beneficios de un banco 100% digital.
+                    </p>
+                    <button type="button" class="abreCuenta" onclick="hacerAlgo()">
+                        Abre tu cuenta hoy
+                    </button>
+                    <div id="tiendaAplicaciones">
+                        <div id="appStore" class="consigueApp">
+                            <div id="iconoApple" class="icon"></div>
+                            <p>Consíguela en <span class="textBold">App Store</span></p>
+                        </div>
+                        <div id="playStore" class="consigueApp">
+                            <div id="iconoGoogle" class="icon"></div>
+                            <p>Disponible en <span class="textBold">Google Play</span></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="section2">
+                <article class="article2">
+                    <div id="circulo"></div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Página 2 -->
+        <div id="page2">
+            <section>
+                <article>
+                    <div id="movilTuDecides"></div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <div id="page2Title">
+                        <h2>Haz que crezca tu dinero<span class="punto">.</span></h2>
+                    </div>
+                    <p class="count">01</p>
+                    <h3>Crea tu cuenta.</h3>
+                    <div class="text">
+                        <p id="parrafo1">Es muy sencillo, solamente ingresa tu celular y listo.</p>
+                    </div>
+                    <p class="count">02</p>
+                    <h3>Solicita tu tarjeta personalizada.</h3>
+                    <div class="text">
+                        <p id="parrafo2">
+                            Selecciona el color que más te guste para tu tarjeta; la enviaremos a tu domicilio.
+                        </p>
+                    </div>
+                    <p class="count">03</p>
+                    <h3>Activa tu tarjeta y empieza a utilizarla.</h3>
+                    <div class="text">
+                        <p id="parrafo3">Inicia sesión en la app e ingresa el número de tarjeta.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Página 3 -->
+        <div id="page3">
+            <section>
+                <article>
+                    <div id="page3Title">
+                        <h2>Manda y recibe pagos al instante<span class="punto">.</span></h2>
+                    </div>
+                    <div id="img-page3">
+                        <div id="movilMovimientos"></div>
+                    </div>
+                    <div id="page3Texto">
+                        <p>Tu dinero esta seguro en todo momento, puedes consultar todos los movimientos de tu cuenta
+                            directamente desde tu celular.</p>
+                    </div>
+                    <div id="btn-page3">
+                        <button type="button" class="abreCuenta" onclick="hacerAlgo()">
+                            Abre tu cuenta hoy
+                        </button>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Página 4 -->
+        <div id="page4">
+            <section>
+                <div id="page4-title">
+                    <h2>Educación Financiera<span class="punto">.</span></h2>
+                    <p>Comineza a aprender con nuestros artículos</p>
+                </div>
+                <article>
+                    <img src="../ejercicio03/estilos/imgs/mujerCajaMudanza.png"
+                        alt="Mujer usando una laptop sobre una caja de muedanza">
+                    <div class="texto">
+                        <p class="fecha"><time datetime="2021-02-12">12 de febrero 2021</time></p>
+                        <p class="categoria">Créditos</p>
+                        <p class="contenido">Que debes saber antes de tramitar un crédito hipotecario</p>
+                        <p class="enlace"><a href="#">Leer más -></a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="../ejercicio03/estilos/imgs/mujerLaptopSala.png"
+                        alt="Mujer usando una laptop desde la sala de su casa">
+                    <div class="texto">
+                        <p class="fecha"><time datetime="2021-02-08">8 de febrero 2021</time></p>
+                        <p class="categoria">Inversión</p>
+                        <p class="contenido">Te damos 5 razones para invertir en la bolsa de Valores</p>
+                        <p class="enlace"><a href="#">Leer más -></a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="../ejercicio03/estilos/imgs/hombreSonriendo.png"
+                        alt="Hombre sonriendo con los brazos cruzados">
+                    <div class="texto">
+                        <p class="fecha"><time datetime="2021-02-02">2 de fecbrero 2021</time></p>
+                        <p class="categoria">Emprender</p>
+                        <p class="contenido">Alcanza la libertar financiera antes de los 30</p>
+                        <p class="enlace"><a href="#">Leer más -></a></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Página 5 -->
+        <div id="page5">
+            <section>
+                <article>
+                    <h2>Abre tu cuenta hoy</h2>
+                    <p>Es rápido y sencillo, te tomará menos de 5 minutos</p>
+                    <div id="input">
+                        <input type="text" id="emain" placeholder="Ingresa tu correo electrónico">
+                        <div id="btn-page3">
+                            <button type="button" class="abreCuenta" onclick="hacerAlgo()">
+                                Abre tu cuenta hoy
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <footer>
+            <article id="productos">
+                <h3>Productos</h3>
+                <p>Tarjeta de débito</p>
+                <p>Tarjeta de crédito</p>
+                <p>Créditos hipotecarios</p>
+            </article>
+            <article id="empresa">
+                <h3>Empresa</h3>
+                <p>Acerca de nosotros</p>
+                <p>Tarjeta de crédito</p>
+                <p>Créditos hipotecarios</p>
+            </article>
+            <article id="centroDeAyuda">
+
+                <h3>Cenrtro de ayuda</h3>
+                <p>Acerca de nosotros</p>
+                <p>Tarjeta de crédito</p>
+                <p>Créditos hipotecarios</p>
+            </article>
+            <article id="bancaDigital">
+                <h3>Banca digital.</h3>
+                <p>Avenida de Paseo de la Reforma 296.</p>
+            </article>
+            <div id="socialMedia">
+                <div id="facebook" class="iconos"  ></div>
+                <div id="instagram" class="iconos"  ></div>
+                <div id="linkedin" class="iconos"  ></div>
             </div>
-          </article>
-        </section>
-        <section class="section2">
-          <article class="article2">
-            <div id="circulo"></div>
-          </article>
-        </section>
-        <section></section>
-      </main>
-    </div>
-    <div id="page2">
-      <main>
-        <section>
-          <article>
-            <div id="movilTuDecides"></div>
-          </article>
-        </section>
-        <section>
-          <article>
-            <h2>Haz que crezca tu dinero<span id="punto">.</span></h2>
 
-            <p class="count">01</p>
+            <div id="barraDivisoria"></div>
 
-            <h3>Crea tu cuenta.</h3>
-            <div class="text">
-              <p id="parrafo1">
-                Es muy sencillo, solamente ingresa tu celular y listo.
-              </p>
+            <div id="textoFooter">
+                <p id="derechos">2021 Banco digital. Todos los derechos reservados</p>
+                <p id="terminos"><a href="#">Termninos y condiciones</a> <a href="#">Aviso de privacidad</a> </p>
             </div>
+        </footer>
+    </main>
+</body>
 
-            <p class="count">02</p>
-
-            <h3>Solicita tu tarjeta personalizada.</h3>
-            <div class="text">
-              <p id="parrafo2">
-                Seleccione el color que más te guste para tu tarjeta, la
-                enviaremos a tu domicilio.
-              </p>
-            </div>
-
-            <p class="count">03</p>
-
-            <h3>Activa tu tarjeta y empieza a utilizarla.</h3>
-            <div class="text">
-              <p id="parrafo3">
-                Inicia sesión en la app e ingresa el número de tarjeta.
-              </p>
-            </div>
-          </article>
-        </section>
-      </main>
-    </div>
-    <div id="page3"></div>
-    <div id="page4"></div>
-    <div id="page5"></div>
-  </body>
 </html>

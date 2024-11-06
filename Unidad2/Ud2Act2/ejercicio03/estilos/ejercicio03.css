@@ -3,6 +3,8 @@
     --color--purple: #7110f6;
     --color--gray: #f5f5f5;
     --color--white: #ffffff;
+    --width--page: 1500px;
+    --height--page: 100vh;
 }
 
 * {
@@ -15,21 +17,23 @@ body {
     background-color: var(--color--white);
 }
 
+/* Estilos para elementos punto */
+.punto {
+    color: var(--color--purple);
+}
 
+/* Estilos para la página 1 */
 #page1 {
-    width: 1500px;
-    height: 100vh;
-
+    width: var(--width--page);
+    height: var(--height--page);
     margin: 0 auto;
 }
 
 /* Estilos para el header */
-
 #page1 header {
     display: inline-block;
     width: 100%;
     height: 10vh;
-
     line-height: 10vh;
 }
 
@@ -75,99 +79,84 @@ body {
     font-weight: bold;
 }
 
-#page1 header nav ul li #btn-descargarApp {
+#page1 #btn-descargarApp {
     background-color: var(--color--purple);
     color: white;
-    /* Otra opcion es poner !important y ya no debo especificar toda la ruta, pero eso como última opción */
     font-weight: bold;
 }
 
-/* Estilos para main */
-
+/* Estilos para main en página 1 */
 #page1 main {
     width: 100%;
     height: 90vh;
 }
 
-#page1 main .section1 {
+#page1 .section1 {
     background-color: var(--color--white);
     float: left;
     width: 40%;
     height: 90vh;
-
     margin-top: -4px;
-    /* No logro detectar de donde sale ese espacio de 4px si ninguno tiene margin*/
 }
 
-#page1 main .section2 {
+#page1 .section2 {
     background-color: var(--color--gray);
     float: right;
     width: 60%;
     height: 90vh;
     margin-top: -4px;
-    /* No logro detectar de donde sale ese espacio de 4px si ninguno tiene margin*/
 }
 
-#page1 main .section1 .article1 {
+#page1 .section1 .article1 {
     width: 75%;
     margin-top: 100px;
 }
 
-#page1 main .section1 .article1 p:first-child {
+#page1 .section1 .article1 p:first-child {
     color: var(--color--purple);
     font-size: 18px;
 }
 
-#page1 main .section1 .article1 #nuevo {
+#page1 .section1 .article1 #nuevo {
     background-color: var(--color--purple);
     color: var(--color--white);
     padding: 10px;
-    border-radius:5px;
+    border-radius: 5px;
     font-size: 18px;
     margin-right: 10px;
 }
 
-#page1 main .section1 .article1 h2 {
-    font-weight:bolder;
+#page1 .section1 .article1 h2 {
+    font-weight: bolder;
     font-size: 65px;
     margin-top: 40px;
 }
 
-#page1 main .section1 .article1 h2 #punto {
-    color: var(--color--purple);
-}
-
-.section1 .article1>p:nth-of-type(2) {
+#page1 .section1 .article1>p:nth-of-type(2) {
     font-size: 26px;
     width: 95%;
     margin-top: 40px;
-
 }
 
-.section1 .article1 #abreCuenta {
+main .abreCuenta {
     background-color: var(--color--purple);
     color: var(--color--white);
-
     font-size: 18px;
     font-weight: 100;
-
     width: 50%;
     height: 100%;
-
     border-radius: 10px;
     border: none;
     padding: 22px;
-
     margin-top: 40px;
 }
 
-.section1 .article1 #tiendaAplicaciones {
+#page1 .section1 .article1 #tiendaAplicaciones {
     width: 100%;
     margin-top: 90px;
-
 }
 
-.section1 .article1 #tiendaAplicaciones .icon {
+#page1 .section1 .article1 #tiendaAplicaciones .icon {
     background-position: center;
     background-size: cover;
     float: left;
@@ -175,11 +164,11 @@ body {
     height: 50px;
 }
 
-.section1 .article1 #appStore .icon {
+#appStore .icon {
     background-image: url('../estilos/iconos/appStore.png');
 }
 
-.section1 .article1 #playStore .icon {
+#playStore .icon {
     background-image: url('../estilos/iconos/playStore.png');
 }
 
@@ -187,20 +176,20 @@ body {
     font-weight: bold;
 }
 
-.section1 .article1 .consigueApp {
+#page1 .section1 .article1 .consigueApp {
     float: left;
     width: 50%;
     height: 100px;
 }
 
-.section1 .article1 .consigueApp p {
+#page1 .section1 .article1 .consigueApp p {
     float: left;
     width: 110px;
     margin-left: 15px;
     margin-top: 10px;
 }
 
-.section2 .article2 #circulo{
+#page1 .section2 .article2 #circulo {
     background-image: url('../estilos/imgs/mujerCirculo.png');
     background-position: center;
     background-size: cover;
@@ -210,29 +199,30 @@ body {
     margin-top: 100px;
 }
 
-
-/* Diseños página 2 */
-
+/* Estilos para la página 2 */
 #page2 {
     background-color: var(--color--white);
-    width: 1500px;
-    height: 100vh;
+    width: var(--width--page);
+    height: var(--height--page);
     margin: 0 auto;
 }
 
-#page2 main{
+#page2 main {
     width: 100%;
     margin: 0 auto;
 }
 
-#page2 main section article{
-    width: 50%;
-    float: left;
-    margin: 0 auto;
+#page2 section article #movilTuDecides {
+    margin-left: 80px;
 }
 
+#page2 section article {
+    width: 50%;
+    float: left;
+    margin: 125px auto;
+}
 
-#page2 main section article:nth-of-type(1) #movilTuDecides{
+#page2 section article:nth-of-type(1) #movilTuDecides {
     background-image: url('../estilos/imgs/movilTuDecides.png');
     background-position: center;
     background-size: cover;
@@ -240,18 +230,19 @@ body {
     height: 680px;
 }
 
-#page2 main section article h2{
-    font-weight:bolder;
+#page2 #page2Title {
+    width: 100%;
+}
+
+#page2 section article h2 {
+    font-weight: bolder;
     font-size: 65px;
     margin-top: 40px;
-
-    width: 80%;
+    width: 70%;
     margin-bottom: 30px;
 }
 
-
-
-#page2 main section article .count{
+#page2 section article .count {
     float: left;
     font-size: 22px;
     color: var(--color--purple);
@@ -260,8 +251,7 @@ body {
     width: 10%;
 }
 
-
-#page2 main section article h3{
+#page2 section article h3 {
     float: left;
     font-size: 22px;
     font-weight: bold;
@@ -270,83 +260,338 @@ body {
     text-align: left;
 }
 
-
-
-#page2 main section article .text{
+#page2 section article .text {
     float: left;
     font-size: 20px;
     margin-top: 20px;
     border-left: 3px solid gray;
-    padding: 5px 0 10px 50px;
+    padding: 5px 0 10px 60px;
     margin-left: 10px;
     width: 100%;
 }
 
-#page2 main section article .text:last-child{
-    border-left:none;
+#page2 section article .text:last-child {
+    border-left: none;
 }
 
-#page2 main section article .text{
+#page2 section article .text {
     width: 100%;
 }
 
-#page2 main section article  #parrafo1{
+#page2 section article #parrafo1 {
     width: 390px;
 }
 
-#page2 main section article  #parrafo2{
+#page2 section article #parrafo2 {
     width: 470px;
 }
 
-#page2 main section article  #parrafo3{
+#page2 section article #parrafo3 {
     width: 510px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Estilos para la página 3 */
 #page3 {
-    background-color: yellow;
     width: 100%;
     height: 100vh;
 }
 
+#page3 section{
+    width: var(--width--page);
+    height: var(--height--page);
+    margin: 0 auto;
+}
 
+#page3 article{
+    background-color: var(--color--gray);
+    width: 95%;
+    height: 70vh;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+#page3 article #page3Title{
+    float: left;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#page3 article #page3Title h2{
+    font-size: 65px;
+    width: 80%;
+}
+
+#page3 article #page3Texto{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+
+#page3 article #page3Texto p{
+    font-size: 20px;
+    width: 70%;
+}
+
+#page3 article #btn-page3{
+    float: left;
+    width: 60%;
+}
+
+#page3 article #img-page3{
+    float: right;
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 55px;
+    padding-right: 45px;
+}
+
+
+#page3 article .abreCuenta{
+    float: left;
+    background-color: var(--color--purple);
+    color: var(--color--white);
+    font-size: 18px;
+    font-weight: 100;
+    width: 30%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    padding: 22px;
+    margin-top: 40px;
+    margin-left: 100px;
+
+}
+
+#page3 article #movilMovimientos{
+    background-image: url('../estilos/imgs/movilMovimientos.png');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 430px;
+    float: right;
+}
+
+/* Estilos para la página 4 */
 #page4 {
-    background-color: green;
     width: 100%;
     height: 100vh;
 }
+
+#page4 section{
+    width: var(--width--page);
+    height: var(--height--page);
+    margin: 0 auto;
+}
+
+#page4 section #page4-title{
+    width: 100%;
+    padding-left: 75px;
+}
+
+#page4 section #page4-title h2{
+    font-size: 65px;
+}
+
+#page4 section #page4-title p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#page4 section article{
+    width: 400px;
+    float: left;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+#page4 section article img{
+    width: 400px;
+    height: 460px;
+}
+
+#page4 section article .text{
+    width: 400px;
+}
+
+#page4 section article .fecha{
+    margin-top: 20px;
+    float: left;
+}
+
+#page4 section article .categoria{
+    margin-top: 20px;
+    float: right;
+}
+
+#page4 section article .contenido{
+    clear: both;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#page4 section article .enlace{
+    margin-top: 20px;   
+}
+
+#page4 section article .enlace a{
+    color: var(--color--purple);
+    text-decoration: none;    
+}
+
+
+/* Estilos para la página 5 */
 
 #page5 {
-    background-color: brown;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
+
+#page5 section{
+    width: var(--width--page);
+    height: 30vh;
+    margin: 0 auto;
+}  
+
+#page5 section article{
+    text-align: center;
+    background-color: var(--color--purple);
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+#page5 section article h2{
+    color: var(--color--white);
+    font-size: 65px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+#page5 section article p{
+    color: var(--color--white);
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+#page5 section article #input{
+    width: 500px;
+    background-color: var(--color--white);
+    color: var(--color--white);
+    font-size: 20px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#page5 section article input{
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 6px;
+    width: 230px;
+    border: none;
+}
+#page5 section article button{
+    margin: 0;
+}
+
+
+
+
+
+footer{
+    clear: both;
+    width: var(--width--page);
+    margin: 0 auto;
+}
+
+footer article{
+    width: 25%;
+    height: 25vh;
+    float: left;
+}
+
+footer h3{
+    font-size: 25px;
+}
+
+footer p{
+    margin-top: 20px;
+}
+
+footer #bancaDigital{
+    width: 25%;
+    height: 10vh;
+    float: left;
+}
+
+footer #socialMedia .iconos{
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+footer #socialMedia #facebook{
+    background-image: url('../estilos/iconos/iconoFacebook.png');
+
+}
+footer #socialMedia #instagram{
+    background-image: url('../estilos/iconos/iconoInstagram.png');
+
+}
+
+footer #socialMedia #linkedin{
+    background-image: url('../estilos/iconos/iconoLinkedin.png');
+
+}
+
+footer #socialMedia {
+    width: 25%;
+    float: left;
+}
+
+footer #socialMedia .iconos{
+    display: inline-block;
+}
+
+
+footer #textoFooter{
+    float: left;
+    width: 100%;
+    height: 10vh;
+}
+
+footer #textoFooter{
+    border-top: 2px solid var(--color--gray);
+}
+
+footer #textoFooter #derechos{
+    float: left;
+    width: 50%;
+}
+
+footer #textoFooter #terminos{
+    float: right;
+    width: 50%;
+}
+
+footer #textoFooter #terminos{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+footer #textoFooter #terminos A{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
