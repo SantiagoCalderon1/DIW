@@ -11,27 +11,28 @@
 </head>
 
 <body>
+    <header>
+        <h1><a href="#">Banca Digital</a><span class="punto">.</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Personas</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <!-- Decidí darle a link el estilo de un botón, en vez de poner uno directamente -->
+                <li>
+                    <a href="#" id="btn-iniciarSesion" class="btn-nav textBold">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a href="#" id="btn-descargarApp" class="btn-nav textBold">Descarga la app</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <!-- Contenedor Principal -->
     <main>
         <!-- Página 1 -->
         <div id="page1">
-            <header>
-                <h1><a href="#">Banca Digital</a><span class="punto">.</span></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Personas</a></li>
-                        <li><a href="#">Empresas</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <!-- Decidí darle a link el estilo de un botón, en vez de poner uno directamente -->
-                        <li>
-                            <a href="#" id="btn-iniciarSesion" class="btn-nav textBold">Iniciar sesión</a>
-                        </li>
-                        <li>
-                            <a href="#" id="btn-descargarApp" class="btn-nav textBold">Descarga la app</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+
             <section class="section1">
                 <article class="article1">
                     <p>
@@ -72,7 +73,7 @@
             </section>
             <section>
                 <article>
-                        <h2 class="textBold">Haz que crezca tu dinero<span class="punto">.</span></h2>
+                    <h2 class="textBold">Haz que crezca tu dinero<span class="punto">.</span></h2>
                     <p class="count textBold">01</p>
                     <h3 class="textBold">Crea tu cuenta.</h3>
                     <div class="text">
@@ -130,7 +131,8 @@
                     <div class="texto">
                         <p class="fecha"><time datetime="2021-02-12">12 de febrero 2021</time></p>
                         <p class="categoria">Créditos</p>
-                        <p class="contenido textBold"><a href="#">Que debes saber antes de tramitar un crédito hipotecario</a></p>
+                        <p class="contenido textBold"><a href="#">Que debes saber antes de tramitar un crédito
+                                hipotecario</a></p>
                         <p class="enlace textBold"><a href="#">Leer más -></a></p>
                     </div>
                 </article>
@@ -140,7 +142,8 @@
                     <div class="texto">
                         <p class="fecha"><time datetime="2021-02-08">8 de febrero 2021</time></p>
                         <p class="categoria">Inversión</p>
-                        <p class="contenido textBold"><a href="#">Te damos 5 razones para invertir en la bolsa de Valores</a></p>
+                        <p class="contenido textBold"><a href="#">Te damos 5 razones para invertir en la bolsa de
+                                Valores</a></p>
                         <p class="enlace textBold"><a href="#">Leer más -></a></p>
                     </div>
                 </article>
@@ -175,44 +178,70 @@
             </section>
 
         </div>
-
-        <footer>
-            <article id="productos">
-                <h3>Productos</h3>
-                <p><a href="#">Tarjeta de débito</a></p>
-                <p><a href="#">Tarjeta de crédito</a></p>
-                <p><a href="#">Créditos hipotecarios</a></p>
-            </article>
-            <article id="empresa">
-                <h3>Empresa</h3>
-                <p><a href="#">Tarjeta de débito</a></p>
-                <p><a href="#">Tarjeta de crédito</a></p>
-                <p><a href="#">Créditos hipotecarios</a></p>
-            </article>
-            <article id="centroDeAyuda">
-                <h3>Centro de ayuda</h3>
-                <p><a href="#">Tarjeta de débito</a></p>
-                <p><a href="#">Tarjeta de crédito</a></p>
-                <p><a href="#">Créditos hipotecarios</a></p>
-            </article>
-            <article id="bancaDigital">
-                <h3>Banca digital.</h3>
-                <p><a href="#">Avenida de Paseo de la Reforma 296.</a></p>
-            </article>
-            <div id="socialMedia">
-                <div id="facebook" class="iconos"></div>
-                <div id="instagram" class="iconos"></div>
-                <div id="linkedin" class="iconos"></div>
-            </div>
-
-            <div id="barraDivisoria"></div>
-
-            <div id="textoFooter">
-                <p id="derechos">2021 Banco digital. Todos los derechos reservados</p>
-                <p id="terminos"><a href="#">Términos y condiciones</a> <a href="#">Aviso de privacidad</a> </p>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <article id="productos">
+            <h3>Productos</h3>
+            <p><a href="#">Tarjeta de débito</a></p>
+            <p><a href="#">Tarjeta de crédito</a></p>
+            <p><a href="#">Créditos hipotecarios</a></p>
+        </article>
+        <article id="empresa">
+            <h3>Empresa</h3>
+            <p><a href="#">Tarjeta de débito</a></p>
+            <p><a href="#">Tarjeta de crédito</a></p>
+            <p><a href="#">Créditos hipotecarios</a></p>
+        </article>
+        <article id="centroDeAyuda">
+            <h3>Centro de ayuda</h3>
+            <p><a href="#">Tarjeta de débito</a></p>
+            <p><a href="#">Tarjeta de crédito</a></p>
+            <p><a href="#">Créditos hipotecarios</a></p>
+        </article>
+        <article id="bancaDigital">
+            <h3>Banca digital.</h3>
+            <p><a href="#">Avenida de Paseo de la Reforma 296.</a></p>
+        </article>
+        <div id="socialMedia">
+            <div id="facebook" class="iconos"></div>
+            <div id="instagram" class="iconos"></div>
+            <div id="linkedin" class="iconos"></div>
+        </div>
+
+        <div id="barraDivisoria"></div>
+
+        <div id="textoFooter">
+            <p id="derechos">2021 Banco digital. Todos los derechos reservados</p>
+            <p id="terminos"><a href="#">Términos y condiciones</a> <a href="#">Aviso de privacidad</a> </p>
+        </div>
+    </footer>
+    <div id="cambioSeccion">
+        <h2>Comienzo sección móvil</h2>
+    </div>
+
+    <div id="versionMovil">
+        <div id="pagina1">
+            <section>
+                <div id="mujerConTarjeta"></div>
+            </section>
+            <section>
+                <article>
+                    <h2 class="textBold">Toma el control de tu dinero<span class="punto">.</span></h2>
+                    <div id="contenido">
+                        <div id="check"></div>
+                        <p>Sin comisiones ocultas</p>
+                        <div id="check"></div>
+                        <p>Adiós a las sucursales</p>
+                        <div id="check"></div>
+                        <p>Atención al cliente 24/7</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div id="pagina2"></div>
+        <div id="pagina3"></div>
+
+    </div>
 </body>
 
 </html>
