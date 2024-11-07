@@ -3,14 +3,23 @@
 /* Variables generales */
 :root {
   --color--purple: #7110f6;
+  /* Color púrpura principal */
   --color--gray: #f5f5f5;
+  /* Color gris claro para fondos */
   --color--white: #ffffff;
+  /* Color blanco para fondos */
   --width--page: 1500px;
+  /* Ancho máximo de la página */
   --height--page: 100vh;
+  /* Altura máxima de la página (100% del alto de la ventana) */
   --margin--centrado: 0 auto;
+  /* Margen centrado horizontal */
   --font--size--p: 20px;
+  /* Tamaño de fuente para párrafos */
   --font--size--title: 70px;
+  /* Tamaño de fuente para títulos principales */
   --font--size--subtitle: 40px;
+  /* Tamaño de fuente para subtítulos */
 }
 
 /* Reseteo del margen y padding a todos los elementos */
@@ -32,6 +41,23 @@ body {
   color: var(--color--purple);
 }
 
+.textBold {
+  font-weight: bold;
+}
+
+/* Estilos generales para el botón abre tu cuenta hoy */
+main .abreCuenta {
+  background-color: var(--color--purple);
+  color: var(--color--white);
+  font-size: 18px;
+  font-weight: 100;
+  border-radius: 10px;
+  border: none;
+  padding: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
 /* Estilos para la página 1 */
 #page1 {
   width: var(--width--page);
@@ -46,6 +72,7 @@ body {
   width: 100%;
   height: 10vh;
   line-height: 10vh;
+  /* Centra verticalmente el texto */
 }
 
 #page1 header h1 {
@@ -53,9 +80,15 @@ body {
   float: left;
   width: 40%;
   height: 10vh;
+  /* Quiero que el h1 ocupe todo el alto del header para que los elementos no se le pongan debajo */
+}
+
+#page1 header h1 a {
+  text-decoration: none;
 }
 
 #page1 header nav {
+  /* Esta es la parte del manú de navegación */
   background-color: var(--color--gray);
   float: right;
   width: 60%;
@@ -85,6 +118,7 @@ body {
 
 /* Estilos para la clase bnt-nav */
 .btn-nav {
+  /* Esto hace que parezca a un botón pero en realidad es un a (link) */
   padding: 10px;
   border-radius: 5px;
 }
@@ -92,13 +126,11 @@ body {
 /* Estilos para el btn del nav */
 #btn-iniciarSesion {
   background-color: var(--color--white);
-  font-weight: bold;
 }
 
-#page1 #btn-descargarApp {
+#btn-descargarApp {
   background-color: var(--color--purple);
   color: white;
-  font-weight: bold;
 }
 
 /* Estilos para main en página 1 */
@@ -107,7 +139,7 @@ body {
   float: left;
   width: 40%;
   height: 90vh;
-  /* Margin negativo porquese crea un pqueño margen, asi que lo quito así */
+  /* Margin negativo porque se crea un pqueño margen, asi que lo quito así */
   margin-top: -4px;
 }
 
@@ -116,20 +148,23 @@ body {
   float: right;
   width: 60%;
   height: 90vh;
-  /* Margen negativo porquese crea un pqueño margen, asi que lo quito así */
+  /* Margen negativo porque se crea un pqueño margen, asi que lo quito así */
   margin-top: -4px;
 }
 
+/* Estilos del articulo de la zona izquierda */
 #page1 .section1 .article1 {
   width: 80%;
   margin-top: 100px;
 }
 
+/* Al primer elemento p le asigno un estilo */
 #page1 .section1 .article1 p:first-child {
   color: var(--color--purple);
   font-size: 18px;
 }
 
+/* Al elemnto con id nuevo le doy algunos estilos especificos */
 #page1 .section1 .article1 #nuevo {
   background-color: var(--color--purple);
   color: var(--color--white);
@@ -139,36 +174,28 @@ body {
   margin-right: 10px;
 }
 
+/* Estilos para el titulo */
 #page1 .section1 .article1 h2 {
-  font-weight: bolder;
+  /* Tendrá el grosor de la letra más ancho */
   font-size: 70px;
   margin-top: 40px;
 }
 
-#page1 .section1 .article1 > p:nth-of-type(2) {
+/* Estilos para el segundo elemento de tipo p */
+#page1 .section1 .article1>p:nth-of-type(2) {
   font-size: 26px;
-  width: 95%;
+  width: 90%;
   margin-top: 40px;
 }
 
-main .abreCuenta {
-  background-color: var(--color--purple);
-  color: var(--color--white);
-  font-size: 18px;
-  font-weight: 100;
-  width: 50%;
-  height: 100%;
-  border-radius: 10px;
-  border: none;
-  padding: 22px;
-  margin-top: 40px;
-}
-
+/* Estilos para el tamaño del contenedor donde irán los iconos de tienda de aplicaciones */
 #page1 .section1 .article1 #tiendaAplicaciones {
   width: 100%;
   margin-top: 90px;
+  cursor: pointer;
 }
 
+/* Estilos para los iconos */
 #page1 .section1 .article1 #tiendaAplicaciones .icon {
   background-position: center;
   background-size: cover;
@@ -177,6 +204,9 @@ main .abreCuenta {
   height: 50px;
 }
 
+/* Cuando es una imagen meramente informativa uso la etiqueta img,
+  pero cuando debo modificarla o agregarle sientos estilos prefiero
+  usar un DIV y rellenarlo con una imagen, y asi lo manipulo más facil*/
 #appStore .icon {
   background-image: url("../estilos/iconos/appStore.png");
 }
@@ -185,16 +215,14 @@ main .abreCuenta {
   background-image: url("../estilos/iconos/playStore.png");
 }
 
-.textBold {
-  font-weight: bold;
-}
-
+/* Estilos ara el contenedor donde irán los iconos */
 #page1 .section1 .article1 .consigueApp {
   float: left;
   width: 50%;
   height: 100px;
 }
 
+/* Estilos para el texto de los iconos  */
 #page1 .section1 .article1 .consigueApp p {
   float: left;
   width: 110px;
@@ -202,14 +230,14 @@ main .abreCuenta {
   margin-top: 10px;
 }
 
+/* Estilos del articulo de la zona derecha */
 #page1 .section2 .article2 #circulo {
   background-image: url("../estilos/imgs/mujerCirculo.png");
   background-position: center;
   background-size: cover;
   width: 620px;
   height: 650px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 
 /* Estilos para la página 2 */
@@ -220,17 +248,19 @@ main .abreCuenta {
   margin: 0 auto;
 }
 
-
+/* Margen izquierdo para la imagen */
 #page2 section article #movilTuDecides {
   margin-left: 80px;
 }
 
+/* Estilos para los contenedores de la página 2 */
 #page2 section article {
   width: 50%;
   float: left;
   margin: 125px auto;
 }
 
+/* Estilos de la imagen de la página 2 */
 #page2 section article:nth-of-type(1) #movilTuDecides {
   background-image: url("../estilos/imgs/movilTuDecides.png");
   background-position: center;
@@ -239,55 +269,59 @@ main .abreCuenta {
   height: 680px;
 }
 
-#page2 #page2Title {
-  width: 100%;
-}
-
+/* Estilos para el titulo */
 #page2 section article h2 {
   width: 70%;
-  
-  font-weight: bolder;
+
   font-size: 65px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
+/* Estilos para la lista de pasos */
 #page2 section article .count {
   color: var(--color--purple);
   width: 10%;
   float: left;
-  
+
   margin-top: 30px;
   font-size: 25px;
-  font-weight: bold;
 }
 
+/* Estilos para los subtitulos */
 #page2 section article h3 {
   width: 90%;
   float: left;
-  
+
   font-size: 25px;
   margin-top: 30px;
   text-align: left;
-  font-weight: bold;
 }
 
+/* Estlos para la zona de texto */
 #page2 section article .text {
   float: left;
   width: 100%;
-  
+
   font-size: 20px;
   margin-top: 20px;
   border-left: 2px solid gray;
+  /* Se me ocurrieron muchas formas de hacer la linea que está debajo de
+  los números, al final me decanté por simplemente que el texto ocupe todo
+  hasta estar debajo de un número y luego a ese texto ponerle un border */
   padding: 5px 0 10px 60px;
   margin-left: 15px;
 }
 
+/* Al último elemento le elimino la barra */
 #page2 section article .text:last-child {
   border-left: none;
 }
 
-
+/* La forma que se me ocurrio para que el texto tenga forma de piramide fue
+poner el texto dento de un contenedor que ocupe el 100% y luego a ese texto
+le doy un medida x hasta que se produzca el salto de linea,
+y asi no se juntan todos y queda mal */
 #page2 section article #parrafo1 {
   width: 390px;
 }
@@ -306,23 +340,26 @@ main .abreCuenta {
   height: 100vh;
 }
 
+/* Estilos para el contenedor de la página 3 */
 #page3 section {
   width: var(--width--page);
   height: var(--height--page);
   margin: 0 auto;
 }
 
+/* Estilos para el articulo de la página 3 */
 #page3 article {
   background-color: var(--color--gray);
   width: 95%;
   height: 60vh;
-  
-  margin: 0 auto;
+
+  margin: 200px auto;
   border-radius: 50px;
   text-align: left;
-  margin-top: 150px;
 }
 
+/* Aquí implementé lo mismo del contenedor 100% y el texto width x
+para poner hacer el salto de linea */
 #page3 article #page3Title {
   float: left;
   width: 50%;
@@ -335,6 +372,7 @@ main .abreCuenta {
   width: 80%;
 }
 
+/* Misma implementacion de contenedor y texto */
 #page3 article #page3Texto {
   float: left;
   width: 55%;
@@ -352,6 +390,7 @@ main .abreCuenta {
   width: 60%;
 }
 
+/* Aquí hice un contenedor para poder manipular la imagen en el espacio */
 #page3 article #img-page3 {
   float: right;
   width: 25%;
@@ -360,23 +399,13 @@ main .abreCuenta {
   padding-right: 45px;
 }
 
-#page3 article .abreCuenta {
-  background-color: var(--color--purple);
-  color: var(--color--white);
-  float: left;
-  width: 25%;
-  height: 10%;
-  
-  font-size: 18px;
-  font-weight: 100;
-  border-radius: 10px;
-  border: none;
-  
-  padding: 22px;
-  margin-top: 40px;
+/* Como el boton es el mismo, pero para cada página le cambio una propiedad
+ según mis necesidades */
+#page3 .abreCuenta {
   margin-left: 100px;
 }
 
+/* Aquí inserto la imagen dentro del div y le doy formato */
 #page3 article #movilMovimientos {
   background-image: url("../estilos/imgs/movilMovimientos.png");
   background-size: cover;
@@ -393,12 +422,14 @@ main .abreCuenta {
   height: var(--height--page);
 }
 
+/* El tamaño de mi contenedor será este */
 #page4 section {
   width: var(--width--page);
   height: var(--height--page);
   margin: 0 auto;
 }
 
+/* Estilos para zona del titulo de la página 4 */
 #page4 section #page4-title {
   width: 100%;
   padding-left: 75px;
@@ -413,6 +444,7 @@ main .abreCuenta {
   margin-top: 15px;
 }
 
+/* Estilos generales para los articulos */
 #page4 section article {
   float: left;
   width: 400px;
@@ -426,18 +458,21 @@ main .abreCuenta {
   height: 460px;
 }
 
+/* Estilos para la zona de texto general del articulo */
 #page4 section article .texto {
   width: 400px;
   height: 300px;
   font-size: 20px;
 }
 
+/* Estilos para la fecha del articulo */
 #page4 section article .fecha {
   float: left;
   margin-top: 20px;
   width: 50%;
 }
 
+/* Estilos para la categoria del articulo */
 #page4 section article .categoria {
   float: right;
   text-align: right;
@@ -445,21 +480,19 @@ main .abreCuenta {
   width: 50%;
 }
 
-#page4 section article .contenido {
+/* Estilos para el contenido de los articulos */
+#page4 section article .contenido a {
   float: left;
   width: 100%;
   font-size: 25px;
   margin-top: 30px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
-#page4 section article .enlace {
+/* Estilo para los elemento a */
+#page4 section article .enlace a {
   float: left;
   margin-top: 30px;
-  font-weight: bold;
-}
-
-#page4 section article .enlace a {
   color: var(--color--purple);
   text-decoration: none;
 }
@@ -472,10 +505,11 @@ main .abreCuenta {
 
 #page5 section {
   width: var(--width--page);
-  height: 20vh;
+  height: 50vh;
   margin: 0 auto;
 }
 
+/* Estilos para el articulo principal de la página 5 */
 #page5 section article {
   background-color: var(--color--purple);
   width: 1100px;
@@ -484,21 +518,26 @@ main .abreCuenta {
   margin: 0 auto;
   border-radius: 20px;
   text-align: center;
+  margin-top: 100px;
 }
 
+/* Estilos para el título */
 #page5 section article h2 {
   color: var(--color--white);
   font-size: 70px;
   padding: 20px 0;
-  font-weight: bold;
 }
 
+/* Estilo para el elemento p de la página 5 */
 #page5 section article p {
   color: var(--color--white);
   font-size: 24px;
   padding: 20px 0;
+  /* Le doy un margen superior e inferior, en los laterales nada*/
 }
 
+
+/* Estilos para contenedor del input */
 #page5 section article #input {
   background-color: var(--color--white);
   color: var(--color--white);
@@ -521,12 +560,9 @@ main .abreCuenta {
   border: none;
 }
 
-/* Estilos del boton cerca al footer */
-#page5 section article button {
-  width: 200px;
-  height: 75px;
+/* Estilos del boton abre tu cuneta hoy cerca al footer */
+#page5 .abreCuenta {
   margin: 0px;
-  padding: 0px;
 }
 
 footer {
@@ -555,6 +591,10 @@ footer p {
   font-size: var(--font--size--p);
 }
 
+footer p a {
+  text-decoration: none;
+}
+
 /* Contenedor para el articulo bancaDigital */
 footer #bancaDigital {
   width: 25%;
@@ -571,11 +611,13 @@ footer #socialMedia .iconos {
   /* Estilos para el fondo de los iconos, que en este caso es una imagen */
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 footer #socialMedia #facebook {
   background-image: url("../estilos/iconos/iconoFacebook.png");
 }
+
 footer #socialMedia #instagram {
   background-image: url("../estilos/iconos/iconoInstagram.png");
 }
@@ -616,3 +658,6 @@ footer #textoFooter #terminos a {
   text-decoration: none;
   margin-left: 30px;
 }
+
+
+/* Inicio parte de movil */
