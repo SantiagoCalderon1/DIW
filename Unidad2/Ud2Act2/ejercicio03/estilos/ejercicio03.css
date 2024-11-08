@@ -14,16 +14,8 @@
   /* Altura máxima de la página (100% del alto de la ventana) */
   --margin--centrado: 0 auto;
   /* Margen centrado horizontal */
-  --font--size--p: 20px;
+  --font--size--p--footer: 20px;
   /* Tamaño de fuente para párrafos */
-  --font--size--title: 70px;
-  /* Tamaño de fuente para títulos principales */
-  --font--size--subtitle: 40px;
-  /* Tamaño de fuente para subtítulos */
-  --width--page--movil: 430px;
-  /* Tamaño máximo de la página en móvil */
-  --height--page--movil: 932px;
-  /* Tamaño máximo de la página en móvil */
 }
 
 /* Reseteo del margen y padding a todos los elementos */
@@ -41,7 +33,7 @@ body {
   background-color: var(--color--white);
 }
 
-/* Estilos para los elementos punto */
+/* Estilos para los elementos especificos */
 .punto {
   color: var(--color--purple);
 }
@@ -49,6 +41,16 @@ body {
 .textBold {
   font-weight: bold;
 }
+
+
+.material-symbols-outlined{
+  color: var(--color--purple);
+  font-size: 20px;
+  margin-top: 30px;
+  margin: 30px 0 0 5px;
+  cursor: pointer;
+}
+
 
 /* Estilos generales para el botón abre tu cuenta hoy */
 main .abreCuenta {
@@ -67,7 +69,7 @@ main .abreCuenta {
 /* Estilos para el header */
 header {
   width: var(--width--page);
-  margin: 0 auto;
+  margin: var(--margin--centrado);
   height: 10vh;
   line-height: 10vh;
   /* Centra verticalmente el texto */
@@ -251,7 +253,7 @@ header nav ul li a {
   background-color: var(--color--white);
   width: var(--width--page);
   height: var(--height--page);
-  margin: 0 auto;
+  margin: var(--margin--centrado);
 }
 
 /* Margen izquierdo para la imagen */
@@ -340,6 +342,7 @@ y asi no se juntan todos y queda mal */
   width: 510px;
 }
 
+
 /* Estilos para la página 3 */
 #page3 {
   width: 100%;
@@ -350,7 +353,7 @@ y asi no se juntan todos y queda mal */
 #page3 section {
   width: var(--width--page);
   height: var(--height--page);
-  margin: 0 auto;
+  margin: var(--margin--centrado);
 }
 
 /* Estilos para el articulo de la página 3 */
@@ -432,7 +435,7 @@ para poner hacer el salto de linea */
 #page4 section {
   width: var(--width--page);
   height: var(--height--page);
-  margin: 0 auto;
+  margin: var(--margin--centrado);
 }
 
 /* Estilos para zona del titulo de la página 4 */
@@ -512,7 +515,7 @@ para poner hacer el salto de linea */
 #page5 section {
   width: var(--width--page);
   height: 50vh;
-  margin: 0 auto;
+  margin: var(--margin--centrado);
 }
 
 /* Estilos para el articulo principal de la página 5 */
@@ -521,7 +524,7 @@ para poner hacer el salto de linea */
   width: 1100px;
   height: 300px;
 
-  margin: 0 auto;
+  margin: var(--margin--centrado);
   border-radius: 20px;
   text-align: center;
   margin-top: 100px;
@@ -550,7 +553,7 @@ para poner hacer el salto de linea */
 
   width: 475px;
   padding: 10px 10px;
-  margin: 0 auto;
+  margin: var(--margin--centrado);
   font-size: 20px;
   border-radius: 10px;
 }
@@ -594,7 +597,7 @@ footer h3 {
 /* Estilos para los parrafos del footer */
 footer p {
   margin-top: 25px;
-  font-size: var(--font--size--p);
+  font-size: var(--font--size--p--footer);
 }
 
 footer p a {
@@ -661,35 +664,7 @@ footer #textoFooter #terminos {
 }
 
 footer #textoFooter #terminos a {
+  /* Quitamos el subrayado de los enlaces */
   text-decoration: none;
   margin-left: 30px;
 }
-
-
-
-
-/* Inicio parte de movil */
-
-#cambioSeccion{
-  clear: both;
-  background-color: red;
-  width: 100%;
-  height: 100px;
-
-
-
-  
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#versionMovil{
-  background-color: red;
-  width: 100%;
-  margin: 0 auto;
-}
-
-#pagina1{
-  var(--width--page--movil)
-}
-
