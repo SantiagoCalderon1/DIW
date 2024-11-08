@@ -1,3 +1,6 @@
+/* Santiago Calderon castaño */
+
+/* Variables generales */
 :root {
     --main-color: #40110D;
     --highlight-color: #F2DABD;
@@ -51,7 +54,6 @@ header nav {
     width: 90%;
     height: var(--height--header);
     line-height: 10vh;
-
 }
 
 /* Lista de navegación */
@@ -66,18 +68,21 @@ header nav ul li {
     padding-right: 40px;
 }
 
+/* Enlaces del menú */
 header nav ul li a {
     color: var(--main-color);
     font-size: 20px;
     text-decoration: none;
 }
 
+/* Cuando me haga encima del link cambie el fondo de color y la letra */
 header nav ul li a:hover {
     background-color: var(--highlight-color);
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* He intentado todo lo posible para que cunado esté en la página inicio se quede subyado y en negrita */
 header nav ul li a:visited,
 header nav ul li a:active,
 header nav ul li a:focus {
@@ -121,12 +126,15 @@ header nav ul li a:focus {
     height: var(--height--page);
 }
 
+
 #container>nav ul {
+    /* Quito las viñetas de la lista */
     list-style: none;
     margin: 0 10px;
     width: 90%;
 }
 
+/* Estilos para la lista del nav */
 #container>nav ul li {
     background-color: var(--highlight-translucent);
     text-align: center;
@@ -135,10 +143,12 @@ header nav ul li a:focus {
     cursor: pointer;
 }
 
+/* Cunado el ratón se ponga encima el elemento que el fondo cambie de color */
 #container>nav ul li:hover {
     background-color: var(--highlight-color);
 }
 
+/* Estilos para los titulos de las categorias de la panderia */
 #container>nav ul li a {
     background-color: var(--main-color);
     color: white;
@@ -149,12 +159,14 @@ header nav ul li a:focus {
     padding: 5px;
 }
 
+/* Estilos especificos para las imagenes de panaderia, pasteleria y empanadas */
 #container>nav ul li img {
     width: 150px;
     height: 150px;
     margin: 10px 0px;
 }
 
+/* Estilos los elementos de panaderia, pasteleria, empanadas */
 #container>nav ul li,
 #container>nav ul li img {
     border-radius: 15px;
@@ -167,17 +179,20 @@ main {
     height: var(--height--page);
 }
 
+/* Estilos para los articulos */
 main article {
     color: var(--main-color);
     margin: 30px;
     width: 30%;
 }
 
+/* Estilos para los parrafos de main */
 main p {
     margin-top: 30px;
     font-size: 23px;
 }
 
+/* Cambio el tamaño al último elemento p */
 main article p:last-child {
     font-size: 30px;
 }
@@ -185,12 +200,15 @@ main article p:last-child {
 /* Diseños del contenido lateral */
 aside {
     float: right;
+    /* Esto me genera una barra de desplazamiento vertical, ya que el elemento por si solo no cabe,
+    así que me gusta como queda, hace un poco interactiva la página */
     overflow-y: scroll;
     width: 13%;
     height: 80vh;
 }
 
 aside section {
+    /* Alineo el texto al centro */
     text-align: center;
 }
 
@@ -208,6 +226,7 @@ aside section {
     margin-bottom: 15px;
 }
 
+/* Iconos */
 #iconFacebook {
     background-image: url('../estilos/imgs/iconos/facebook.png');
 }
@@ -228,18 +247,23 @@ aside section {
     background-image: url('../estilos/imgs/iconos/youtube.png');
 }
 
+
 aside ul li {
+    /* Quito las viñetas */
     list-style: none;
 }
 
+/* Estilo para los links */
 aside ul li a {
     color: var(--main-color);
     text-decoration: none;
 }
 
+
 aside ul li,
 aside article,
 h2 {
+    /* Quería darle un fondo algo translucido */
     background-color: var(--highlight-translucent);
     text-align: center;
     margin-top: 10px;
@@ -248,13 +272,14 @@ h2 {
     cursor: pointer;
 }
 
+/* Estos elemetos comparten el mismo background */
 aside h2,
 aside ul li:hover,
 aside article:hover {
     background-color: var(--highlight-color);
 }
 
-
+/* Estos elementos tiene estilos en común */
 aside section article p,
 aside section ul li a {
     background-color: var(--main-color);
@@ -264,17 +289,19 @@ aside section ul li a {
     border-radius: 10px;
 }
 
+/* Estilos espeficos para los elementos img */
 aside article img {
     width: 150px;
     height: 150px;
     border-radius: 10px;
 }
 
+/* Estilos especificos para el ultimo elemento li */
 aside section li:last-child {
     margin-bottom: 20px;
 }
 
-/* Prueba degradado */
+/* Prueba degradado, no se si me gusta del todo, pero lo dejo por si acaso */
 aside {
     position: relative;
     box-shadow: inset 0px 20px 15px -15px rgba(242, 218, 189, 1), inset 0px -20px 15px -15px rgba(242, 218, 189, 1);
@@ -290,22 +317,27 @@ footer {
 }
 
 footer ul {
+    /* Floto la lista a la derecha */
     float: right;
 }
 
 footer ul li {
+    /* Ubico los elemetos horizontalmente */
     display: inline-block;
 }
 
 footer p {
     color: var(--main-color);
     font-size: 16px;
+    /* Lo floto y separo 20px de la izquierda */
     float: left;
     margin-left: 20px;
 }
 
+/* Estilos para los elementos a */
 footer ul li a {
     color: var(--main-color);
+    /* Quito el subrayado */
     text-decoration: none;
     margin-right: 30px;
 }
