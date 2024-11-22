@@ -18,6 +18,8 @@ body{
 /* Definimos dimensiones y centramos el contenedor */
 #container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     
     width: 980px;
@@ -28,18 +30,14 @@ body{
 /* Estilos para la cabecera (#header) */
 /* Color de fondo y altura específica */
 #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Con esto centro el texto en el pie de página */
     background-color: rgba(75, 175, 115, 255);
 
     width: 100%;
     height: 10vh; /* Altura de la cabecera */
-}
-
-/* Estilos para el párrafo en la cabecera (#pHeader) */
-/* Centramos el texto en la cabecera */
-#header p {
-    width: 100%; 
-    line-height: 10vh; /* Centrado vertical del texto */
-    text-align: center; /* Centrado horizontal del texto */
 }
 
 /* Contenido de la página */
@@ -52,16 +50,13 @@ body{
 /* Estilos para la barra lateral (#aside) */
 /* Definimos color de fondo y dimensiones */
 #aside {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Con esto centro el texto en el pie de página */
     background-color: rgba(90, 166, 192, 255);
     width: 20%; 
     height: 85vh; /* Altura de la barra lateral */
-}
-
-/* Estilos para el párrafo en la barra lateral (#pAside) */
-/* Centramos el texto en la barra lateral */
-#aside p {
-    width: 100%; 
-    text-align: center; /* Centrado del texto */
 }
 
 /* Estilos para el área principal (#main) */
@@ -70,28 +65,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+
     background-color: rgba(209, 125, 249, 255);
     width: 80%;
     height: 85vh; /* Altura del área principal */
 }
 
-/* Estilos para el párrafo en el área principal (#pMain) */
-/* Centramos el texto en el área principal */
-#main p{
-    width: 100%; 
-    text-align: center; /* Centrado del texto */
-}
-
 /* Estilos para las secciones (#section1, #section2) */
 /* Definimos bordes, dimensiones y márgenes */
-#section1,
-#section2 {
+.section{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
-    border: 3px solid red; /* Bordes alrededor de las secciones */
     width: 95%; 
     height: 37vh; /* Altura de las secciones */
+    border: 3px solid red; /* Bordes alrededor de las secciones */
 }
 
 /* Estilos para la primera sección (#section1) */
@@ -99,36 +89,33 @@ body{
 
 /* Estilos para los divs dentro de la primera sección (#section1 > div) */
 /* Bordes y dimensiones de los divs secundarios */
-#section1 > div {    
-    display: flex;
-    justify-content: space-around;
-
+.article{
     border: 3px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
-    width: 44%; 
     height: 30vh; /* Altura de los divs */
+}
+
+/* Estilos para los divs dentro de la primera sección (#section1 > div) */
+/* Bordes y dimensiones de los divs secundarios */
+#section1 > div {    
+    width: 44%; 
 }
 
 /* Estilos para los divs dentro de la segunda sección (#section2 > div) */
 /* Bordes y dimensiones de los divs secundarios */
 #section2 > div {
-    border: 3px solid rgba(43, 25, 252, 255); /* Bordes para los divs */
     width: 28%; 
-    height: 28vh; /* Altura de los divs */
-    margin: 3.5% 2.22%; /* Margen alrededor */
 }
 
 /* Estilos para el pie de página (#footer) */
 /* Color de fondo y dimensiones del pie de página */
 #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Con esto centro el texto en el pie de página */
+    
     background-color: rgba(250, 126, 92, 255);
     width: 100%; 
     height: 5vh; /* Altura del pie de página */
 }
 
-/* Estilos para el párrafo en el pie de página (#pFooter) */
-/* Centramos el texto en el pie de página */
-#footer p{
-    width: 100%; 
-    line-height: 5vh; /* Espaciado vertical */
-    text-align: center; /* Centrado del texto */
-}
