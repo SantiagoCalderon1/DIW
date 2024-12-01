@@ -1,0 +1,77 @@
+/* Santiago Calderon Castaño */
+
+/* Reiniciamos los margenes exteriores e interiores */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Usaré el body como contenedor */
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Todo los subititulos tendrán 20px de margen interior */
+h2 {
+    padding-bottom: 20px;
+}
+
+/* Header principal*/
+body>header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 10vh;
+}
+
+/* Contenedor pincipal del contenido */
+#container {
+    display: flex;
+}
+
+/* Contenedor lateral */
+aside {
+    display: flex;
+    flex-direction: column;
+
+    width: 260px;
+}
+
+aside nav {
+    padding-left: 30px;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+}
+
+/* Margen inferior de todos los elemetros p de los articulos */
+article p {
+    margin-bottom: 20px;
+}
+
+/* Para que la descripcion pueda ser en 3 columnas, he hecho usa seccion
+y la he declarado como display flex */
+article section.descripcion {
+    display: flex;
+}
+
+/* Defino el el taamaño de 33% porque asi caben 3 */
+article section.descripcion article {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+/* hago un poco mas pequeño el contenedor del texto para
+que no choquen los parrafos con los otros */
+article section.descripcion article p {
+    width: 95%;
+}

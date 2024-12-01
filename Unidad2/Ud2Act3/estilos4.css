@@ -1,0 +1,30 @@
+/* Santiago Calderon Castaño */
+
+/* Reiniciamos los margenes exteriores e interiores */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.negrita{
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width: 600px) {
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main{
+        background-color: red;
+    }
+    
+}
+
