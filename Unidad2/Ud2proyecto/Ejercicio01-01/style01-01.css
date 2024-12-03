@@ -1,218 +1,343 @@
 /* Santiago Calderon Castaño */
 
+.OCULTAR {
+  display: none !important;
+}
+
 /* Variables CSS */
 :root {
-    /* Tipografías */
-    --font-main: 'Pacifico';
-    --font-alternative: sans-serif;
-    /* Tamaños */
-    --size-titles: 24px;
-    --size-subtitles: 18px;
+  /* Tipografías */
+  --font-main: "Pacifico";
+  --font-alternative: sans-serif;
+  /* Tamaños */
+  --size-titles: 2rem;
+  --size-subtitles: 3rem;
 
-    --size-font-xs: 12px;
-    --size-font-sm: 13px;
-    --size-font-md: 15px;
-    --size-font-lg: 17px;
-    --size-font-xl: 17px;
-    --size-max-container-x: 1200px;
-    --size-heigth-header-xs: 8vh;
-    /* Colores */
-    --color-black: #000;
-    --color-white: #fff;
-    --color-background-header: #B8D2F4;
-    --color-background-menu: var(--color-white);
-    --color-background-all: var(--color-background-header);
-    --color-text: #517104;
-    --color-title-light: #2CDA1C;
-    --color-title-dark: #1F411C;
-    --color-primary: #517104;
-    --color-secondary: #83A705;
-    --color-primary-opposite: #894B26;
-    --color-secondary-opposite: #F58A03;
-    --color-link: var(--color-primary-opposite);
-    --color-link-hover: var(--color-secondary-opposite);
-    --color-transparency: rgba(0, 0, 0, 0.5);
+  --size-font-xs: 12px;
+  --size-font-sm: 13px;
+  --size-font-md: 15px;
+  --size-font-lg: 17px;
+  --size-font-xl: 17px;
+  --size-max-container-x: 1200px;
+  --size-heigth-header-xs: 8vh;
+  /* Colores */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-background-header: #b8d2f4;
+  --color-background-menu: var(--color-white);
+  --color-background-all: var(--color-background-header);
+  --color-text: #517104;
+  --color-title-light: #2cda1c;
+  --color-title-dark: #1f411c;
+  --color-primary: #517104;
+  --color-secondary: #83a705;
+  --color-primary-opposite: #894b26;
+  --color-secondary-opposite: #f58a03;
+  --color-link: var(--color-primary-opposite);
+  --color-link-hover: var(--color-secondary-opposite);
+  --color-transparency: rgba(0, 0, 0, 0.5);
 }
 
 /* EStilos base */
 html {
-    font-family: var(--font-main), var(--font-alternative);
-    font-size: var(--size-font-xs);
-    background-color: var(--color-background-all);
-    color: var(--color-text);
+  font-family: var(--font-main), var(--font-alternative);
+  font-size: var(--size-font-xs);
+  background-color: var(--color-background-all);
+  color: var(--color-text);
 }
 
 /* Reiniciamos todos los margenes exteriores e interiores */
 *,
 :after,
 :before {
-    padding: 0;
-    margin: 0
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-/* #inicio, */
+#inicio,
 #nosotros,
 #contacto {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #container {
-    width: 100%;
+  width: 100%;
 }
 
-h2{
-    font-size: 35px;
+h2 {
+  font-size: var(--size-subtitles);
+  font-weight: 100;
 }
+
+p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
 /* Estilos para la primera página */
+#containerHeader {
+  display: flex;
+  flex-direction: column;
+  /* cuando lo necesite en horizontal pasar a row */
+
+  width: 100%;
+  height: 40vh;
+}
 
 /* Estilos para el header */
-#container > header {
-    /* background-color: var(--color-background-header); */
-    background-color: var(--color-background-header);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#containerHeader > header {
+  background-color: var(--color-background-header);
 
-    width: 100%;
-    height: var(--size-heigth-header-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  height: var(--size-heigth-header-xs);
 }
 
 #logo {
-    background-image: url('../Material/img/house-158939.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    /* Decidí que tuviese el mismo tamaño del header */
-    width: 8vh;
-    height: 8vh;
+  background-image: url("../Material/img/house-158939.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Decidí que tuviese el mismo tamaño del header */
+  width: 8vh;
+  height: var(--size-heigth-header-xs);
 }
 
-/* Esto no me funciona, preguntar el porque!!! */
-body #container header h1 {
-    font-weight: 100 !important;
+h1 {
+  font-weight: 100 !important;
+  font-size: var(--size-titles);
 }
 
 #textBold {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 /* Estilos para el menu */
-nav ul {
-    background-color: green;
-    display: flex;
-    flex-direction: column;
+#containerHeader nav ul {
+  display: flex;
+  flex-direction: column;
+  /* cuando lo necesite en horizontal pasar a row */
 }
 
-nav ul li {
-    background-color: var(--color-background-menu);
-    list-style: none;
+#containerHeader nav ul li {
+  background-color: var(--color-background-menu);
+  list-style: none;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border-bottom: 1px solid var(--color-primary-opposite);
+  border-bottom: 1px solid var(--color-primary-opposite);
+  cursor: pointer;
 
-    width: 100%;
-    height: 8vh;
+  width: 100%;
+  height: 8vh;
 }
 
-nav ul li:last-child {
-    border-bottom: none;
+#containerHeader nav ul li:last-child {
+  border-bottom: none;
 }
 
-nav ul li a {
-    color: var(--color-primary-opposite);
-    font-size: var(--size-titles);
-    text-decoration: none;
-    font-weight: 100;
+#containerHeader nav ul li a {
+  color: var(--color-primary-opposite);
+  font-size: var(--size-titles);
+  text-decoration: none;
 }
 
+/* Estilos para la section */
+#inicio section {
+  background-image: url("../Material/img/casa-bosque-xs.jpg");
+  background-position: center;
+  background-size: cover;
 
-/* Estilo para el inicio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-/* Estilos para el fondo */
-main section#inicio {
-    background-image: url('../Material/img/casa-bosque-xs.jpg');
-    background-position: center;
-    background-size: cover;
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 60vh;
+  width: 100%;
+  height: 60vh;
 }
 
 /* Estilos para el cuadrado con mensaje */
-main section#inicio #mensaje {
-    background-color: var(--color-transparency);
-    border-radius: 20px;
+#inicio #mensaje {
+  background-color: var(--color-transparency);
 
-    border: 1px solid #2CDA1C;
+  border-radius: 20px;
+  border: 1px solid #2cda1c;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    width: 80%;
-    height: 57.5%;
+  width: 80%;
+  height: 35vh;
 }
 
-main section#inicio #mensaje h2 {
-    color: var(--color-title-light);
-    font-size: 35px;
-    font-weight: 100;
+#inicio #mensaje h2 {
+  color: var(--color-title-light);
 }
 
 /* Estilos para la segunda página */
+#nosotros {
+  background-image: url("../Material/img/texture-1674066_640.jpg");
+  background-repeat: repeat;
 
-main section#nosotros {
-    background-image: url('../Material/img/texture-1674066_640.jpg');
-    background-repeat: repeat;
-
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-main section#nosotros article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#nosotros article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main section#nosotros article #imgCasaCielo{
-    background-image: url('../Material/img/casa-cielo-xs.jpg');
-    background-size: cover;
-    background-position: center;
-
-    width: 85%;
-    height: 40%;
-    
+#nosotros article section {
+  margin: 1vh 0 10vh 0;
+  width: 80%;
 }
+
+#nosotros article #imgCasaCielo {
+  background-image: url("../Material/img/casa-cielo-xs.jpg");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 10px;
+  border: 1px solid var(--color-black);
+
+  width: 85%;
+  height: 35%;
+}
+
+/* Estilos para la tercera página */
+
+#modelos {
+  background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Casa Basicas */
+
+#modelos article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modelos article header {
+  padding: 2vh 0 0 0;
+}
+
+#modelos article p {
+  width: 85%;
+}
+
+#modelos #casasBasicas #imgCasaBasica {
+  background-image: url("../Material/img/casa-basica-xs.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 40vh;
+}
+
+#modelos #casasGrandes #imgCasaGrande {
+  background-image: url("../Material/img/casa-grande-xs.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 30vh;
+}
+
+#modelos #juntoAlLago #imgCasaLago {
+  background-image: url("../Material/img/casa-lago-xs.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 40vh;
+}
+
+/* Seccion galeria */
+
+#galeria {
+  background-image: url("../Material/img/texture-1674066_640.jpg");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 300vh;
+}
+
+#galeria .galeriaImg {
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 10px;
+  border: 1px solid var(--color-black);
+
+  margin: 15px 0;
+
+  width: 90%;
+  height: 35vh;
+}
+
+#imgAlone {
+  background-image: url("../Material/img/alone-1867464-xs.jpg");
+}
+
+#imgArquitecture {
+  background-image: url("../Material/img/architecture-1836070-xs.jpg");
+}
+#imgAutumn {
+  background-image: url("../Material/img/autumn-1748644-xs.jpg");
+}
+#imgApartament {
+  background-image: url("../Material/img/apartment-3564955-xs.jpg");
+}
+#imgCountryHome {
+  background-image: url("../Material/img/country-house-540796-xs.jpg");
+}
+#imgLargeHome {
+  background-image: url("../Material/img/large-home-389271-xs.jpg");
+}
+
 /* Media queries movil landscape */
 
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 812px) {}
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 812px) {
+}
 
 /* Media queries sm */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Media queries md */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Media queries lg */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* Media queries xl */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
