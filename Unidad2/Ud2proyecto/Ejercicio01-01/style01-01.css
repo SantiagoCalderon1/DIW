@@ -1,0 +1,218 @@
+/* Santiago Calderon Castaño */
+
+/* Variables CSS */
+:root {
+    /* Tipografías */
+    --font-main: 'Pacifico';
+    --font-alternative: sans-serif;
+    /* Tamaños */
+    --size-titles: 24px;
+    --size-subtitles: 18px;
+
+    --size-font-xs: 12px;
+    --size-font-sm: 13px;
+    --size-font-md: 15px;
+    --size-font-lg: 17px;
+    --size-font-xl: 17px;
+    --size-max-container-x: 1200px;
+    --size-heigth-header-xs: 8vh;
+    /* Colores */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-background-header: #B8D2F4;
+    --color-background-menu: var(--color-white);
+    --color-background-all: var(--color-background-header);
+    --color-text: #517104;
+    --color-title-light: #2CDA1C;
+    --color-title-dark: #1F411C;
+    --color-primary: #517104;
+    --color-secondary: #83A705;
+    --color-primary-opposite: #894B26;
+    --color-secondary-opposite: #F58A03;
+    --color-link: var(--color-primary-opposite);
+    --color-link-hover: var(--color-secondary-opposite);
+    --color-transparency: rgba(0, 0, 0, 0.5);
+}
+
+/* EStilos base */
+html {
+    font-family: var(--font-main), var(--font-alternative);
+    font-size: var(--size-font-xs);
+    background-color: var(--color-background-all);
+    color: var(--color-text);
+}
+
+/* Reiniciamos todos los margenes exteriores e interiores */
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* #inicio, */
+#nosotros,
+#contacto {
+    width: 100%;
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+}
+
+h2{
+    font-size: 35px;
+}
+/* Estilos para la primera página */
+
+/* Estilos para el header */
+#container > header {
+    /* background-color: var(--color-background-header); */
+    background-color: var(--color-background-header);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: var(--size-heigth-header-xs);
+}
+
+#logo {
+    background-image: url('../Material/img/house-158939.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Decidí que tuviese el mismo tamaño del header */
+    width: 8vh;
+    height: 8vh;
+}
+
+/* Esto no me funciona, preguntar el porque!!! */
+body #container header h1 {
+    font-weight: 100 !important;
+}
+
+#textBold {
+    font-weight: 700 !important;
+}
+
+/* Estilos para el menu */
+nav ul {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    background-color: var(--color-background-menu);
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid var(--color-primary-opposite);
+
+    width: 100%;
+    height: 8vh;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    color: var(--color-primary-opposite);
+    font-size: var(--size-titles);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+/* Estilo para el inicio */
+
+/* Estilos para el fondo */
+main section#inicio {
+    background-image: url('../Material/img/casa-bosque-xs.jpg');
+    background-position: center;
+    background-size: cover;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60vh;
+}
+
+/* Estilos para el cuadrado con mensaje */
+main section#inicio #mensaje {
+    background-color: var(--color-transparency);
+    border-radius: 20px;
+
+    border: 1px solid #2CDA1C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 80%;
+    height: 57.5%;
+}
+
+main section#inicio #mensaje h2 {
+    color: var(--color-title-light);
+    font-size: 35px;
+    font-weight: 100;
+}
+
+/* Estilos para la segunda página */
+
+main section#nosotros {
+    background-image: url('../Material/img/texture-1674066_640.jpg');
+    background-repeat: repeat;
+
+    display: flex;
+    justify-content: center;
+}
+
+main section#nosotros article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section#nosotros article #imgCasaCielo{
+    background-image: url('../Material/img/casa-cielo-xs.jpg');
+    background-size: cover;
+    background-position: center;
+
+    width: 85%;
+    height: 40%;
+    
+}
+/* Media queries movil landscape */
+
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 812px) {}
+
+/* Media queries sm */
+
+@media (min-width: 576px) {}
+
+/* Media queries md */
+
+@media (min-width: 768px) {}
+
+/* Media queries lg */
+
+@media (min-width: 992px) {}
+
+/* Media queries xl */
+
+@media (min-width: 1200px) {}
