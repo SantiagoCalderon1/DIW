@@ -2,6 +2,9 @@
 
 .OCULTAR {
     display: none !important;
+    /* Esto para cuando estoy programando y quiero ocultar algo 
+    para seguir trabajando comodo, pues a ese elemento le añado la clase OCULTAR y ya
+    estaría */
 }
 
 /* Variables CSS */
@@ -18,6 +21,7 @@
     --size-font-md: 15px;
     --size-font-lg: 17px;
     --size-font-xl: 17px;
+
     --size-max-container-x: 1200px;
     --size-heigth-header-xs: 8vh;
     /* Colores */
@@ -44,10 +48,10 @@ html {
     font-size: var(--size-font-xs);
     background-color: var(--color-background-all);
     color: var(--color-text);
+
     scroll-behavior: smooth;
     /* Esto hace que cuando le demos click a las anclas, la página haga un scroll suave */
 }
-
 
 /* Estilos para la flecha de regreso al inicio */
 #container{
@@ -450,10 +454,22 @@ footer {
 */
 
 /* Media queries movil landscape */
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 863px) {
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 932px) {
     h2 {
         font-size: 2rem;
         padding-top: 2vh;
+    }
+
+    #contacto header {
+        margin-top: 0vh;
+    }
+
+    #nosotros section p{
+        font-size: 1rem;
+    }
+
+    #contacto>section .itemFrom {
+        margin-bottom: 0px;
     }
 
     #modelos #imgCasaBasica {
@@ -486,6 +502,13 @@ footer {
     #contacto>section {
         padding-bottom: 15vh;
     }
+
+    #contacto>section {
+        height: 60vh;
+        margin: 0px;
+        padding-top: 0px;
+    }
+    
 }
 
 /* Media queries sm 
@@ -537,12 +560,12 @@ footer {
         font-size: 1.5rem;
     }
 
-    /*Eso que hacabo de hacer arriba es porque la medida de font size md
+    /*Eso que acabo de hacer arriba es porque la medida de font size md
     me parece muy pequeña, pero tampoco queria dejar la variable sin usarla,
     asi que la uso pero igual implemento otra medidpero basandome en la variable */
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -561,6 +584,10 @@ footer {
         width: 80%;
     }
 
+    #nosotros article #imgCasaCielo {
+        height: 30vh;
+    }
+
     #modelos #imgCasaBasica {
         height: 50vh;
     }
@@ -576,6 +603,18 @@ footer {
 
     #galeria .galeriaImg:last-child {
         margin-bottom: 5vh;
+    }
+
+    #contacto section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacto>section {
+        height: 50vh;
+        margin-top: 5vh;
+        padding-top: 0px;
+
     }
 
     /* Esto es porque creo que hay un margen un poco mas grande
@@ -611,8 +650,11 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin-right: 10px;
         /* cuando lo necesite en horizontal pasar a row */
+    }
+    
+    #containerHeader nav {
+        margin-right: 7%;
     }
 
     #containerHeader nav ul li {
@@ -622,7 +664,7 @@ footer {
 
     #containerHeader nav ul li a,
     #containerHeader header h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         /* Es que no daba con el tamaño de letra para que
         se viera bien, o igual al video*/
     }
@@ -666,7 +708,7 @@ footer {
         width: 100%;
     }
 
-    #galeria .galeriaImg{
+    #galeria .galeriaImg {
         width: 45%;
         height: 30vh;
     }
@@ -679,19 +721,22 @@ footer {
         100% a nivel del compañero, pero así lo solucioné*/
     }
 
-    #galeria header{
+    #galeria header {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
     #contacto #descripcion section i,
-    #contacto #descripcion section p{
+    #contacto #descripcion section p {
         font-size: 1rem;
-        
+
+    }
+
+    #contacto>section {
+        height: 60vh;
     }
 }
-
 /* Media queries xl */
 
 @media (min-width: 1200px) {}

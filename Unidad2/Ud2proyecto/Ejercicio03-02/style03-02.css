@@ -2,6 +2,9 @@
 
 .OCULTAR {
     display: none !important;
+    /* Esto para cuando estoy programando y quiero ocultar algo 
+    para seguir trabajando comodo, pues a ese elemento le añado la clase OCULTAR y ya
+    estaría */
 }
 
 /* Variables CSS */
@@ -451,10 +454,22 @@ footer {
 */
 
 /* Media queries movil landscape */
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 836px) {
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 932px) {
     h2 {
         font-size: 2rem;
         padding-top: 2vh;
+    }
+
+    #contacto header {
+        margin-top: 0vh;
+    }
+
+    #nosotros section p{
+        font-size: 1rem;
+    }
+
+    #contacto>section .itemFrom {
+        margin-bottom: 0px;
     }
 
     #modelos #imgCasaBasica {
@@ -487,6 +502,13 @@ footer {
     #contacto>section {
         padding-bottom: 15vh;
     }
+
+    #contacto>section {
+        height: 60vh;
+        margin: 0px;
+        padding-top: 0px;
+    }
+    
 }
 
 /* Media queries sm 
@@ -538,12 +560,12 @@ footer {
         font-size: 1.5rem;
     }
 
-    /*Eso que hacabo de hacer arriba es porque la medida de font size md
+    /*Eso que acabo de hacer arriba es porque la medida de font size md
     me parece muy pequeña, pero tampoco queria dejar la variable sin usarla,
     asi que la uso pero igual implemento otra medidpero basandome en la variable */
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -562,6 +584,10 @@ footer {
         width: 80%;
     }
 
+    #nosotros article #imgCasaCielo {
+        height: 30vh;
+    }
+
     #modelos #imgCasaBasica {
         height: 50vh;
     }
@@ -577,6 +603,18 @@ footer {
 
     #galeria .galeriaImg:last-child {
         margin-bottom: 5vh;
+    }
+
+    #contacto section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacto>section {
+        height: 50vh;
+        margin-top: 5vh;
+        padding-top: 0px;
+
     }
 
     /* Esto es porque creo que hay un margen un poco mas grande
@@ -694,13 +732,21 @@ footer {
         font-size: 1rem;
 
     }
+
+    #contacto>section {
+        height: 60vh;
+    }
 }
 
 /* Media queries xl */
-
 @media (min-width: 1200px) {
     html {
         font-size: var(--size-font-xl);
+    }
+
+    p{
+        font-size: 1rem;
+        padding-bottom: 20px;
     }
 
     #container{
@@ -715,7 +761,7 @@ footer {
     }
 
     #nosotros article #imgCasaCielo {
-        height: 45vh;
+        height: 40vh;
     }
 
     #modelos {
@@ -746,7 +792,7 @@ footer {
         /* declaramos los elementos como relativo */
         z-index: 10;
         /* Aseguramos que el texto esté encima de la imagen */
-        padding: 0 20px;
+        padding: 0px 5px 15px 5px;
     }
 
     #modelos article header {

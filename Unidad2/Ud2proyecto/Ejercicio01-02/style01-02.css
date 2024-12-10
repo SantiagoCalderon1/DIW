@@ -48,6 +48,14 @@ html {
     /* Esto hace que cuando le demos click a las anclas, la página haga un scroll suave */
 }
 
+/* Reiniciamos todos los margenes exteriores e interiores */
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Estilos para la flecha de regreso al inicio */
 #container{
@@ -64,14 +72,6 @@ html {
     width: 7vh;
     height: 7vh;
     z-index: 20;
-}
-
-/* Reiniciamos todos los margenes exteriores e interiores */
-*,
-:after,
-:before {
-    padding: 0;
-    margin: 0;
 }
 
 body {
@@ -440,15 +440,14 @@ footer {
     justify-content: center;
 }
 
-/* Media queries movil xs.
+/* Media queries movil.
     Programé con estos parametros:
     Lanscape vertical 498px x 836px y un 100% de zoom
     en el inspector de Google
 
-    Lanscape horizontal: no lo programé
+    Lanscape horizontal 836px x 498px y un 100% de zoom
+    en el inspector de Google
 */
-
-/* Media queries movil landscape */
 @media (orientation: landscape) and (min-width: 568px) and (max-width: 863px) {
     h2 {
         font-size: 2rem;
@@ -522,9 +521,7 @@ footer {
 
 /* Media queries md */
 
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 /* Media queries lg */
 
