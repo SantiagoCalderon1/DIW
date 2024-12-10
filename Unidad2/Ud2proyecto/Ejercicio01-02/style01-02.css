@@ -2,6 +2,9 @@
 
 .OCULTAR {
     display: none !important;
+    /* Esto para cuando estoy programando y quiero ocultar algo 
+    para seguir trabajando comodo, pues a ese elemento le añado la clase OCULTAR y ya
+    estaría */
 }
 
 /* Variables CSS */
@@ -18,6 +21,7 @@
     --size-font-md: 15px;
     --size-font-lg: 17px;
     --size-font-xl: 17px;
+
     --size-max-container-x: 1200px;
     --size-heigth-header-xs: 8vh;
     /* Colores */
@@ -44,18 +48,10 @@ html {
     font-size: var(--size-font-xs);
     background-color: var(--color-background-all);
     color: var(--color-text);
+
     scroll-behavior: smooth;
     /* Esto hace que cuando le demos click a las anclas, la página haga un scroll suave */
 }
-
-/* Reiniciamos todos los margenes exteriores e interiores */
-*,
-:after,
-:before {
-    padding: 0;
-    margin: 0;
-}
-
 
 /* Estilos para la flecha de regreso al inicio */
 #container{
@@ -64,7 +60,7 @@ html {
 
 #flechaRegreso{
     position: fixed;
-    background-image: url('../Material/img/arrow-24846.svg');
+    background-image: url('Material/img/arrow-24846.svg');
 
     bottom: 10px;
     right: 10px;
@@ -72,6 +68,14 @@ html {
     width: 7vh;
     height: 7vh;
     z-index: 20;
+}
+
+/* Reiniciamos todos los margenes exteriores e interiores */
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -92,6 +96,7 @@ body {
 h2 {
     font-size: var(--size-subtitles);
     font-weight: 100;
+    padding: 0 10px;
 }
 
 p {
@@ -127,7 +132,7 @@ p {
 }
 
 #logo {
-    background-image: url("../Material/img/house-158939.svg");
+    background-image: url("Material/img/house-158939.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 10vh;
@@ -182,7 +187,7 @@ h1 {
 
 /* Estilos para la section */
 #inicio section {
-    background-image: url("../Material/img/casa-bosque-xs.jpg");
+    background-image: url("Material/img/casa-bosque-xs.jpg");
     background-position: center;
     background-size: cover;
 
@@ -213,11 +218,14 @@ h1 {
 
 /* Estilos para la Página Nosotros*/
 #nosotros {
-    background-image: url("../Material/img/texture-1674066_640.jpg");
+    background-image: url("Material/img/texture-1674066_640.jpg");
     background-repeat: repeat;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 #nosotros article {
@@ -232,7 +240,7 @@ h1 {
 }
 
 #nosotros article #imgCasaCielo {
-    background-image: url("../Material/img/casa-cielo-xs.jpg");
+    background-image: url("Material/img/casa-cielo-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -240,7 +248,7 @@ h1 {
     border: 1px solid var(--color-black);
 
     width: 85%;
-    height: 40%;
+    height: 40vh;
 }
 
 /* Estilos para la Página  Modelos*/
@@ -274,23 +282,23 @@ h1 {
 }
 
 #modelos #imgCasaBasica {
-    background-image: url("../Material/img/casa-basica-xs.jpg");
+    background-image: url("Material/img/casa-basica-xs.jpg");
 
 }
 
 #modelos #imgCasaGrande {
-    background-image: url("../Material/img/casa-grande-xs.jpg");
+    background-image: url("Material/img/casa-grande-xs.jpg");
     height: 30vh;
 }
 
 #modelos #imgCasaLago {
-    background-image: url("../Material/img/casa-lago-xs.jpg");
+    background-image: url("Material/img/casa-lago-xs.jpg");
     margin-bottom: 5px;
 }
 
 /* Estilos para la Página  Galería*/
 #galeria {
-    background-image: url("../Material/img/texture-1674066_640.jpg");
+    background-image: url("Material/img/texture-1674066_640.jpg");
 
     display: flex;
     flex-direction: column;
@@ -317,32 +325,32 @@ h1 {
 }
 
 #imgAlone {
-    background-image: url("../Material/img/alone-1867464-xs.jpg");
+    background-image: url("Material/img/alone-1867464-xs.jpg");
 }
 
 #imgArquitecture {
-    background-image: url("../Material/img/architecture-1836070-xs.jpg");
+    background-image: url("Material/img/architecture-1836070-xs.jpg");
 }
 
 #imgAutumn {
-    background-image: url("../Material/img/autumn-1748644-xs.jpg");
+    background-image: url("Material/img/autumn-1748644-xs.jpg");
 }
 
 #imgApartament {
-    background-image: url("../Material/img/apartment-3564955-xs.jpg");
+    background-image: url("Material/img/apartment-3564955-xs.jpg");
 }
 
 #imgCountryHome {
-    background-image: url("../Material/img/country-house-540796-xs.jpg");
+    background-image: url("Material/img/country-house-540796-xs.jpg");
 }
 
 #imgLargeHome {
-    background-image: url("../Material/img/large-home-389271-xs.jpg");
+    background-image: url("Material/img/large-home-389271-xs.jpg");
 }
 
 /* Estilos para la Página  Galería*/
 #contacto {
-    background-image: url("../Material/img/contacto-xs.jpg");
+    background-image: url("Material/img/contacto-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -383,7 +391,7 @@ h1 {
     border-radius: 20px;
 
     width: 80%;
-    height: 50vh;
+    height: 55vh;
     padding: 5vh 0;
     margin-top: 5vh;
 }
@@ -448,10 +456,32 @@ footer {
     Lanscape horizontal 836px x 498px y un 100% de zoom
     en el inspector de Google
 */
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 863px) {
+
+/* Media queries movil landscape */
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 933px) {
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 2vh;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    #inicio nav ul li a{
+        font-size: 1.25rem;
+    }
+
+    #contacto header {
+        margin-top: 0vh;
+    }
+
+    #nosotros section p{
+        font-size: 1.5rem;
+    }
+
+    #contacto>section .itemFrom {
+        margin-bottom: 0px;
     }
 
     #modelos #imgCasaBasica {
@@ -481,9 +511,14 @@ footer {
 
     /* Me fijé que cuando se gira en el video se desborda el formulario,
     así que decidí darle un poco más de padding al mío para que eso no pase */
+
     #contacto>section {
-        padding-bottom: 15vh;
+        padding-bottom: 17vh;
+        height: 50vh;
+        margin-top: 30px;
+        padding-top: 0px;
     }
+    
 }
 
 /* Media queries sm 
@@ -497,7 +532,7 @@ footer {
 
     /* Estilos para la section */
     #inicio section {
-        background-image: url("../Material/img/casa-bosque-sm.jpg");
+        background-image: url("Material/img/casa-bosque-sm.jpg");
     }
 
     /* Estilos para el cuadrado con mensaje */
@@ -519,14 +554,20 @@ footer {
     }
 }
 
-/* Media queries md */
+/* Media queries md 
+*/
+@media (min-width: 768px) {
 
-@media (min-width: 768px) {}
+}
 
-/* Media queries lg */
+/* Media queries lg 
+*/
+@media (min-width: 992px) {
 
-@media (min-width: 992px) {}
+}
 
 /* Media queries xl */
+@media (min-width: 1200px) {
 
-@media (min-width: 1200px) {}
+
+}

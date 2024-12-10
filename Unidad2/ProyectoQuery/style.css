@@ -2,6 +2,9 @@
 
 .OCULTAR {
     display: none !important;
+    /* Esto para cuando estoy programando y quiero ocultar algo 
+    para seguir trabajando comodo, pues a ese elemento le añado la clase OCULTAR y ya
+    estaría */
 }
 
 /* Variables CSS */
@@ -57,7 +60,7 @@ html {
 
 #flechaRegreso{
     position: fixed;
-    background-image: url("Material/img/arrow-24846.svg");
+    background-image: url('Material/img/arrow-24846.svg');
 
     bottom: 10px;
     right: 10px;
@@ -93,6 +96,7 @@ body {
 h2 {
     font-size: var(--size-subtitles);
     font-weight: 100;
+    padding: 0 10px;
 }
 
 p {
@@ -218,7 +222,10 @@ h1 {
     background-repeat: repeat;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 #nosotros article {
@@ -241,7 +248,7 @@ h1 {
     border: 1px solid var(--color-black);
 
     width: 85%;
-    height: 40%;
+    height: 40vh;
 }
 
 /* Estilos para la Página  Modelos*/
@@ -384,7 +391,7 @@ h1 {
     border-radius: 20px;
 
     width: 80%;
-    height: 50vh;
+    height: 55vh;
     padding: 5vh 0;
     margin-top: 5vh;
 }
@@ -451,10 +458,30 @@ footer {
 */
 
 /* Media queries movil landscape */
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 836px) {
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 933px) {
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 2vh;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    #inicio nav ul li a{
+        font-size: 1.25rem;
+    }
+
+    #contacto header {
+        margin-top: 0vh;
+    }
+
+    #nosotros section p{
+        font-size: 1.5rem;
+    }
+
+    #contacto>section .itemFrom {
+        margin-bottom: 0px;
     }
 
     #modelos #imgCasaBasica {
@@ -484,9 +511,14 @@ footer {
 
     /* Me fijé que cuando se gira en el video se desborda el formulario,
     así que decidí darle un poco más de padding al mío para que eso no pase */
+
     #contacto>section {
-        padding-bottom: 15vh;
+        padding-bottom: 17vh;
+        height: 50vh;
+        margin-top: 30px;
+        padding-top: 0px;
     }
+    
 }
 
 /* Media queries sm 
@@ -538,12 +570,12 @@ footer {
         font-size: 1.5rem;
     }
 
-    /*Eso que hacabo de hacer arriba es porque la medida de font size md
+    /*Eso que acabo de hacer arriba es porque la medida de font size md
     me parece muy pequeña, pero tampoco queria dejar la variable sin usarla,
     asi que la uso pero igual implemento otra medidpero basandome en la variable */
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -553,7 +585,6 @@ footer {
 
     /* Estilos para la section */
     #inicio section {
-        /* background-image: url("Material/img/casa-bosque-md.jpg"); */
         background-image: url("Material/img/casa-bosque-md.jpg");
         background-size: 100% 100%;
     }
@@ -561,6 +592,10 @@ footer {
     /* Estilos para el cuadrado con mensaje */
     #inicio #mensaje h2 {
         width: 80%;
+    }
+
+    #nosotros article #imgCasaCielo {
+        height: 30vh;
     }
 
     #modelos #imgCasaBasica {
@@ -578,6 +613,18 @@ footer {
 
     #galeria .galeriaImg:last-child {
         margin-bottom: 5vh;
+    }
+
+    #contacto section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacto>section {
+        height: 55vh;
+        margin-top: 5vh;
+        padding-top: 0px;
+
     }
 
     /* Esto es porque creo que hay un margen un poco mas grande
@@ -695,13 +742,25 @@ footer {
         font-size: 1rem;
 
     }
+
+    #contacto>section {
+        height: 60vh;
+    }
 }
 
 /* Media queries xl */
-
 @media (min-width: 1200px) {
     html {
         font-size: var(--size-font-xl);
+    }
+
+    #inicio nav ul li a:hover{
+        color: var(--color-secondary-opposite);
+    }
+
+    p{
+        font-size: 1rem;
+        padding-bottom: 20px;
     }
 
     #container{
@@ -716,7 +775,7 @@ footer {
     }
 
     #nosotros article #imgCasaCielo {
-        height: 45vh;
+        height: 40vh;
     }
 
     #modelos {
@@ -747,7 +806,7 @@ footer {
         /* declaramos los elementos como relativo */
         z-index: 10;
         /* Aseguramos que el texto esté encima de la imagen */
-        padding: 0 20px;
+        padding: 0px 5px 15px 5px;
     }
 
     #modelos article header {

@@ -60,7 +60,7 @@ html {
 
 #flechaRegreso{
     position: fixed;
-    background-image: url('../Material/img/arrow-24846.svg');
+    background-image: url('Material/img/arrow-24846.svg');
 
     bottom: 10px;
     right: 10px;
@@ -96,6 +96,7 @@ body {
 h2 {
     font-size: var(--size-subtitles);
     font-weight: 100;
+    padding: 0 10px;
 }
 
 p {
@@ -131,7 +132,7 @@ p {
 }
 
 #logo {
-    background-image: url("../Material/img/house-158939.svg");
+    background-image: url("Material/img/house-158939.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 10vh;
@@ -186,7 +187,7 @@ h1 {
 
 /* Estilos para la section */
 #inicio section {
-    background-image: url("../Material/img/casa-bosque-xs.jpg");
+    background-image: url("Material/img/casa-bosque-xs.jpg");
     background-position: center;
     background-size: cover;
 
@@ -217,11 +218,14 @@ h1 {
 
 /* Estilos para la Página Nosotros*/
 #nosotros {
-    background-image: url("../Material/img/texture-1674066_640.jpg");
+    background-image: url("Material/img/texture-1674066_640.jpg");
     background-repeat: repeat;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 #nosotros article {
@@ -236,7 +240,7 @@ h1 {
 }
 
 #nosotros article #imgCasaCielo {
-    background-image: url("../Material/img/casa-cielo-xs.jpg");
+    background-image: url("Material/img/casa-cielo-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -244,7 +248,7 @@ h1 {
     border: 1px solid var(--color-black);
 
     width: 85%;
-    height: 40%;
+    height: 40vh;
 }
 
 /* Estilos para la Página  Modelos*/
@@ -278,23 +282,23 @@ h1 {
 }
 
 #modelos #imgCasaBasica {
-    background-image: url("../Material/img/casa-basica-xs.jpg");
+    background-image: url("Material/img/casa-basica-xs.jpg");
 
 }
 
 #modelos #imgCasaGrande {
-    background-image: url("../Material/img/casa-grande-xs.jpg");
+    background-image: url("Material/img/casa-grande-xs.jpg");
     height: 30vh;
 }
 
 #modelos #imgCasaLago {
-    background-image: url("../Material/img/casa-lago-xs.jpg");
+    background-image: url("Material/img/casa-lago-xs.jpg");
     margin-bottom: 5px;
 }
 
 /* Estilos para la Página  Galería*/
 #galeria {
-    background-image: url("../Material/img/texture-1674066_640.jpg");
+    background-image: url("Material/img/texture-1674066_640.jpg");
 
     display: flex;
     flex-direction: column;
@@ -321,32 +325,32 @@ h1 {
 }
 
 #imgAlone {
-    background-image: url("../Material/img/alone-1867464-xs.jpg");
+    background-image: url("Material/img/alone-1867464-xs.jpg");
 }
 
 #imgArquitecture {
-    background-image: url("../Material/img/architecture-1836070-xs.jpg");
+    background-image: url("Material/img/architecture-1836070-xs.jpg");
 }
 
 #imgAutumn {
-    background-image: url("../Material/img/autumn-1748644-xs.jpg");
+    background-image: url("Material/img/autumn-1748644-xs.jpg");
 }
 
 #imgApartament {
-    background-image: url("../Material/img/apartment-3564955-xs.jpg");
+    background-image: url("Material/img/apartment-3564955-xs.jpg");
 }
 
 #imgCountryHome {
-    background-image: url("../Material/img/country-house-540796-xs.jpg");
+    background-image: url("Material/img/country-house-540796-xs.jpg");
 }
 
 #imgLargeHome {
-    background-image: url("../Material/img/large-home-389271-xs.jpg");
+    background-image: url("Material/img/large-home-389271-xs.jpg");
 }
 
 /* Estilos para la Página  Galería*/
 #contacto {
-    background-image: url("../Material/img/contacto-xs.jpg");
+    background-image: url("Material/img/contacto-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -387,7 +391,7 @@ h1 {
     border-radius: 20px;
 
     width: 80%;
-    height: 50vh;
+    height: 55vh;
     padding: 5vh 0;
     margin-top: 5vh;
 }
@@ -454,10 +458,18 @@ footer {
 */
 
 /* Media queries movil landscape */
-@media (orientation: landscape) and (min-width: 568px) and (max-width: 932px) {
+@media (orientation: landscape) and (min-width: 568px) and (max-width: 933px) {
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 2vh;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    #inicio nav ul li a{
+        font-size: 1.25rem;
     }
 
     #contacto header {
@@ -465,7 +477,7 @@ footer {
     }
 
     #nosotros section p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #contacto>section .itemFrom {
@@ -499,13 +511,11 @@ footer {
 
     /* Me fijé que cuando se gira en el video se desborda el formulario,
     así que decidí darle un poco más de padding al mío para que eso no pase */
-    #contacto>section {
-        padding-bottom: 15vh;
-    }
 
     #contacto>section {
-        height: 60vh;
-        margin: 0px;
+        padding-bottom: 17vh;
+        height: 50vh;
+        margin-top: 30px;
         padding-top: 0px;
     }
     
@@ -522,7 +532,7 @@ footer {
 
     /* Estilos para la section */
     #inicio section {
-        background-image: url("../Material/img/casa-bosque-sm.jpg");
+        background-image: url("Material/img/casa-bosque-sm.jpg");
     }
 
     /* Estilos para el cuadrado con mensaje */
@@ -575,7 +585,7 @@ footer {
 
     /* Estilos para la section */
     #inicio section {
-        background-image: url("../Material/img/casa-bosque-md.jpg");
+        background-image: url("Material/img/casa-bosque-md.jpg");
         background-size: 100% 100%;
     }
 
@@ -611,7 +621,7 @@ footer {
     }
 
     #contacto>section {
-        height: 50vh;
+        height: 55vh;
         margin-top: 5vh;
         padding-top: 0px;
 
@@ -621,11 +631,18 @@ footer {
     en el la última foto y la sección de contacto */
 }
 
+/* Media queries lg 
+    Programé con estos parametros:
+    Lanscape vertical 1000px x 1114px y un 75% de zoom
+    en el inspector de Google
 
-/* Media queries lg */
+    Lanscape horizontal: no lo programé
+*/
+@media (min-width: 992px) {
 
-@media (min-width: 992px) {}
+}
 
 /* Media queries xl */
+@media (min-width: 1200px) {
 
-@media (min-width: 1200px) {}
+}
