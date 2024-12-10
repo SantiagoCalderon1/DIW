@@ -60,7 +60,7 @@ html {
 
 #flechaRegreso{
     position: fixed;
-    background-image: url('Material/img/arrow-24846.svg');
+    background-image: url('../Material/img/arrow-24846.svg');
 
     bottom: 10px;
     right: 10px;
@@ -132,7 +132,7 @@ p {
 }
 
 #logo {
-    background-image: url("Material/img/house-158939.svg");
+    background-image: url("../Material/img/house-158939.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 10vh;
@@ -187,7 +187,7 @@ h1 {
 
 /* Estilos para la section */
 #inicio section {
-    background-image: url("Material/img/casa-bosque-xs.jpg");
+    background-image: url("../Material/img/casa-bosque-xs.jpg");
     background-position: center;
     background-size: cover;
 
@@ -218,7 +218,7 @@ h1 {
 
 /* Estilos para la Página Nosotros*/
 #nosotros {
-    background-image: url("Material/img/texture-1674066_640.jpg");
+    background-image: url("../Material/img/texture-1674066_640.jpg");
     background-repeat: repeat;
 
     display: flex;
@@ -240,7 +240,7 @@ h1 {
 }
 
 #nosotros article #imgCasaCielo {
-    background-image: url("Material/img/casa-cielo-xs.jpg");
+    background-image: url("../Material/img/casa-cielo-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -282,23 +282,23 @@ h1 {
 }
 
 #modelos #imgCasaBasica {
-    background-image: url("Material/img/casa-basica-xs.jpg");
+    background-image: url("../Material/img/casa-basica-xs.jpg");
 
 }
 
 #modelos #imgCasaGrande {
-    background-image: url("Material/img/casa-grande-xs.jpg");
+    background-image: url("../Material/img/casa-grande-xs.jpg");
     height: 30vh;
 }
 
 #modelos #imgCasaLago {
-    background-image: url("Material/img/casa-lago-xs.jpg");
+    background-image: url("../Material/img/casa-lago-xs.jpg");
     margin-bottom: 5px;
 }
 
 /* Estilos para la Página  Galería*/
 #galeria {
-    background-image: url("Material/img/texture-1674066_640.jpg");
+    background-image: url("../Material/img/texture-1674066_640.jpg");
 
     display: flex;
     flex-direction: column;
@@ -325,32 +325,32 @@ h1 {
 }
 
 #imgAlone {
-    background-image: url("Material/img/alone-1867464-xs.jpg");
+    background-image: url("../Material/img/alone-1867464-xs.jpg");
 }
 
 #imgArquitecture {
-    background-image: url("Material/img/architecture-1836070-xs.jpg");
+    background-image: url("../Material/img/architecture-1836070-xs.jpg");
 }
 
 #imgAutumn {
-    background-image: url("Material/img/autumn-1748644-xs.jpg");
+    background-image: url("../Material/img/autumn-1748644-xs.jpg");
 }
 
 #imgApartament {
-    background-image: url("Material/img/apartment-3564955-xs.jpg");
+    background-image: url("../Material/img/apartment-3564955-xs.jpg");
 }
 
 #imgCountryHome {
-    background-image: url("Material/img/country-house-540796-xs.jpg");
+    background-image: url("../Material/img/country-house-540796-xs.jpg");
 }
 
 #imgLargeHome {
-    background-image: url("Material/img/large-home-389271-xs.jpg");
+    background-image: url("../Material/img/large-home-389271-xs.jpg");
 }
 
 /* Estilos para la Página  Galería*/
 #contacto {
-    background-image: url("Material/img/contacto-xs.jpg");
+    background-image: url("../Material/img/contacto-xs.jpg");
     background-size: cover;
     background-position: center;
 
@@ -532,7 +532,7 @@ footer {
 
     /* Estilos para la section */
     #inicio section {
-        background-image: url("Material/img/casa-bosque-sm.jpg");
+        background-image: url("../Material/img/casa-bosque-sm.jpg");
     }
 
     /* Estilos para el cuadrado con mensaje */
