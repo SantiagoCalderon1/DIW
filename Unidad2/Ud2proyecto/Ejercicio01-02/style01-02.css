@@ -83,7 +83,6 @@ body {
 }
 
 #inicio,
-#nosotros,
 #contacto {
     width: 100%;
     height: 100vh;
@@ -225,7 +224,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
 }
 
 #nosotros article {
@@ -249,6 +247,8 @@ h1 {
 
     width: 85%;
     height: 40vh;
+
+    margin-bottom: 5vh;
 }
 
 /* Estilos para la Página  Modelos*/
@@ -555,12 +555,18 @@ footer {
 }
 
 /* Media queries md 
+    Programé con estos parametros:
+    Lanscape vertical 800px x 1114px y un 75% de zoom
+    en el inspector de Google
+
+    Lanscape horizontal: no lo programé
 */
 @media (min-width: 768px) {
 
 }
 
 /* Media queries lg 
+
 */
 @media (min-width: 992px) {
 
@@ -568,6 +574,5 @@ footer {
 
 /* Media queries xl */
 @media (min-width: 1200px) {
-
 
 }
