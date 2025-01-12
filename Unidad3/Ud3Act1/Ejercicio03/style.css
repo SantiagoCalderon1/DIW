@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    position: relative;
+    /* Para permitir el movimiento absoluto del icono */
+
+}
+
+header {
+    background-color: #7f0909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 15vh;
+}
+
+header .wizard-icon {
+    background-image: url('media/harryVolando.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    left: 10px;
+}
+
+header .wizerd-title {
+    background-image: url('media/Harry_Potter_wordmark.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 250px;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    background-color: #FFC500;
+    font-size: 18px;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav>.breadCrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 20px;
+}
+
+nav>.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav>.menu>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 75vh;
+}
+
+main section {
+    padding: 10px 50px;
+}
+
+main section article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section article .sub-header {
+    text-align: center;
+    width: 40%;
+}
+
+main section article p {
+    text-align: center;
+    width: 60%;
+}
+
+main section article .sub-header img {
+    width: 175px;
+    height: 175px;
+}
+
+footer {
+    background-color: #FFC500;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+}
+
+/* Inicio de las transiones */
+
+@keyframes wizard-titleTransition {
+    0% {
+        transform: scale(0) rotate(0deg);
+        /* Empieza en 0 y sin rotación */
+    }
+
+    25% {
+        transform: scale(1.25) rotate(90deg);
+    }
+
+    50% {
+        transform: scale(2) rotate(180deg);
+        /* Tamaño máximo y rotación a 180° */
+    }
+
+    75% {
+        transform: scale(0.5) rotate(270deg);
+        /* Tamaño reducido y giro completo */
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        /* Retorna al tamaño original con doble giro */
+    }
+}
+
+.wizerd-title {
+    animation: wizard-titleTransition 2s linear;
+}
+
+@keyframes wizar-iconTransition {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        /* Inicio: abajo a la izquierda, sin rotación */
+    }
+
+    25% {
+        transform: translate(80vw, 25vh) rotate(-45deg) rotateY(180deg);
+        /* Moverse hacia la derecha y arriba */
+    }
+
+    50% {
+        transform: translate(0vw, 50vh) rotate(0deg);
+        /* Moverse más hacia la derecha y abajo */
+    }
+
+    75% {
+        transform: translate(80vw, 70vh) rotate(45deg) rotateY(180deg);
+        /* Regresar hacia la izquierda y abajo */
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+        /* Regresar al punto de inicio, con giro final */
+    }
+}
+
+.wizard-icon {
+    animation: wizar-iconTransition 10s 1 ease-in-out;
+    z-index: 1;
+    /* Llamamos la animación */
+
+}
+
+@keyframes breadCrumbs-transition {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.breadCrumbs>a,
+.breadCrumbs>span {
+    animation: breadCrumbs-transition 2s ease-in;
+    /* Llamamos la animación */
+}
+
+
+
+
+@keyframes menu-transition {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        /* Permanece visible */
+        transform: translateY(0);
+    }
+}
+
+.menu li a {
+    opacity: 0;
+    /* Comienza invisible */
+    animation: menu-transition 2s ease-out forwards;
+    /* Añadimos la animación */
+}
+
+.menu li {
+    animation: menu-transition 2s ease-out forwards;
+    /* Añadimos la animación*/
+}
+
+/* Retrasos de la animación para hacer que los elementos aparezcan secuencialmente */
+.menu li:nth-child(1) a {
+    animation-delay: 1s;
+}
+
+.menu li:nth-child(2) a {
+    animation-delay: 0.5s;
+}
+
+.menu li:nth-child(3) a {
+    animation-delay: 0s;
+}
+
+@keyframes harry-transition {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes harry-textTransition {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.article-harry .sub-header, .article-ron .sub-header{
+    animation: harry-transition 1s linear forwards;
+}
+
+.article-harry .harry-text{
+    position: relative;
+    opacity: 0;
+    animation: harry-textTransition 1s ease-in 2.5s forwards;
+}
+
+.article-ron .ron-text{
+    position: relative;
+    opacity: 0;
+    animation: harry-textTransition 1s ease-in 6.5s forwards;    
+}
+
+@keyframes hermione-transition {
+    from {
+        transform: translateX(+400px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.article-hermione .sub-header{
+    animation: hermione-transition 1s linear forwards;
+}
+
+.article-hermione .hermione-text{
+    position: relative;
+    opacity: 0;
+    animation: harry-textTransition 1s ease-in 4.5s forwards;    
+}
+
+
+
+main section article .sub-header #imgHarry {}
+
+main section article .sub-header #imgHermione {}
+
+main section article .sub-header #imgRon {}

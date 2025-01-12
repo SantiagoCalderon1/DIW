@@ -1,0 +1,31 @@
+/* Ejercicio 01 */
+@keyframes rigthToLeft1 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#ejercicio1-1 > .title {
+    animation-name: rigthToLeft1;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+h1 {
+    animation-duration: 3s;
+}
+
+h2 {
+    animation-duration: 6s;
+}
+
+h3 {
+    animation-duration: 9s;
+}
+
+h4 {
+    animation-duration: 12s;
+}

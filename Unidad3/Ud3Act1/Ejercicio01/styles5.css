@@ -1,0 +1,33 @@
+/* Ejercicio 05 */
+@keyframes zoomText {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(2);
+    }
+
+    66% {
+        transform: scale(0.25);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+.title {
+    transition: transform 1s linear;
+    /* Suaviza el cambio de escala */
+    display: inline-block;
+    /* Necesario para aplicar transformaciones correctamente */
+    animation: none;
+    /* Sin animación por defecto */
+}
+
+.title:hover {
+    animation: zoomText 3s linear;
+}

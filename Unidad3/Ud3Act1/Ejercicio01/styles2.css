@@ -1,0 +1,27 @@
+/* Ejercicio 02 */
+@keyframes rigthToLeft2 {
+    from {
+        transform: translateX(100%);
+        font-size: 100%;
+        margin-left: 0%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+    }
+    to {
+        transform: translateX(0%);
+        font-size: 100%;
+        margin-left: 0%;
+    }
+}
+
+#ejercicio1-2>.title {
+    animation-name: rigthToLeft2;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+h1 {
+    animation-duration: 3s;
+}

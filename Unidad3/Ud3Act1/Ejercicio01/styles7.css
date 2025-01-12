@@ -1,0 +1,47 @@
+.ejercicio1-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+    perspective: 1000px;
+    /* Añade perspectiva para el efecto 3D */
+}
+
+.squared {
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    /* Permite mostrar el efecto 3D */
+    animation: giro3D 2s infinite linear; 
+}
+
+@keyframes giro3D {
+    0% {
+        transform: rotateY(0deg);
+        background: red;
+    }
+    24% {
+        background: red;
+    }
+    25% {
+        transform: rotateY(90deg);
+        background: blue;
+    }
+    50% {
+        transform: rotateY(180deg);
+        background: blue;
+    }
+    74% {
+        background: blue;
+    }
+    75% {
+        transform: rotateY(270deg);
+        background: red;
+    }
+    100% {
+        transform: rotateY(360deg);
+        background: red;
+    }
+}

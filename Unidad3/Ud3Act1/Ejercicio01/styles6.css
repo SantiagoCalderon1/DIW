@@ -1,0 +1,21 @@
+/* Ejercicio 06 */
+@keyframes changeColor {
+    0%{
+        background-color: #FF0000;
+    }
+    50%{
+        background-color: #FFC0CB;
+
+    }
+    100%{
+        background-color: #0000FF;
+
+    }
+}
+
+.squared{
+    background-color: #FF0000;
+    width: 300px;
+    height: 300px;
+    animation: changeColor 5s linear 4 alternate;
+}

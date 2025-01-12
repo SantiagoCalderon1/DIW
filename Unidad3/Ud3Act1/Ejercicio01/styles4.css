@@ -1,0 +1,17 @@
+/* Ejercicio 04 */
+@keyframes moveCircle {
+    from {
+        transform: translateX(0); /* Empieza desde el borde izquierdo */
+    }
+    to {
+        transform: translateX(100vh); /* Se mueve hasta el borde derecho de la pantalla */
+    }
+}
+
+.circle {
+    width: 200px; /* Diámetro del círculo (2 * radio) */
+    height: 200px; 
+    background-color: blue; 
+    border-radius: 50%; 
+    animation: moveCircle 5s ease-in 0s 1 forwards;
+}
