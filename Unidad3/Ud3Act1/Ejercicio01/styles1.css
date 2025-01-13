@@ -1,5 +1,8 @@
 /* Ejercicio 01 */
-@keyframes rigthToLeft1 {
+
+/* Definimos el conjunto de fotogramas 
+Queremos que el elemento se mueva desde todo a la derecha hacia la izquierda*/
+@keyframes rigthToLeft {
     from {
         transform: translateX(100%);
     }
@@ -8,24 +11,19 @@
     }
 }
 
-#ejercicio1-1 > .title {
-    animation-name: rigthToLeft1;
-    animation-iteration-count: infinite;
-    position: relative;
-}
-
+/* Asignamos la animación al elemento  */
 h1 {
-    animation-duration: 3s;
+    animation: rigthToLeft 1s;
 }
 
 h2 {
-    animation-duration: 6s;
+    animation: rigthToLeft 2s;
 }
 
 h3 {
-    animation-duration: 9s;
+    animation: rigthToLeft 3s;
 }
 
 h4 {
-    animation-duration: 12s;
+    animation: rigthToLeft 4s ;
 }
