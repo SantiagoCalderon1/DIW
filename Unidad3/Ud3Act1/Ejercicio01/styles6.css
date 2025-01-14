@@ -1,15 +1,14 @@
 /* Ejercicio 06 */
+/* Esta animación hace un cambio de color */
 @keyframes changeColor {
     0%{
         background-color: #FF0000;
     }
     50%{
         background-color: #FFC0CB;
-
     }
     100%{
         background-color: #0000FF;
-
     }
 }
 
@@ -18,4 +17,5 @@
     width: 300px;
     height: 300px;
     animation: changeColor 5s linear 4 alternate;
+    /* Linear significa que la velocidad de la animación será lineal */
 }

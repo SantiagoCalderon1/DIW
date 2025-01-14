@@ -15,8 +15,11 @@
     transform-style: preserve-3d;
     /* Permite mostrar el efecto 3D */
     animation: giro3D 2s infinite linear; 
+    /* Aqui asiganamos la animación */
 }
 
+/* esta funcion hace un giro en 3D, da un efecto como de 2 caras de moneda, por un lado tiene un color rojo
+y por el otro es de color azul */
 @keyframes giro3D {
     0% {
         transform: rotateY(0deg);

@@ -1,4 +1,5 @@
 /* Ejercicio 04 */
+/*  */
 @keyframes moveCircle {
     from {
         transform: translateX(0); /* Empieza desde el borde izquierdo */
@@ -9,9 +10,11 @@
 }
 
 .circle {
-    width: 200px; /* Diámetro del círculo (2 * radio) */
+    /* Diámetro del círculo (2 * radio) */
+    width: 200px; 
     height: 200px; 
     background-color: blue; 
     border-radius: 50%; 
     animation: moveCircle 5s ease-in 0s 1 forwards;
+    /* Forwards quiere decir que el elemento se quedará como al 100% de la animación */
 }

@@ -1,4 +1,5 @@
 /* Ejercicio 02 */
+/* En esta animación hacemos que vaya de derecha a izquierda, aumenta su tamaño y después diminuyendo */
 @keyframes rigthToLeft2 {
     from {
         transform: translateX(100%);
@@ -16,6 +17,7 @@
     }
 }
 
+/* Asiganmos la animación con un loop infinito */
 #ejercicio1-2>.title {
     animation-name: rigthToLeft2;
     animation-iteration-count: infinite;

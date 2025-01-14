@@ -1,0 +1,191 @@
+body {
+    background-color: #306d85;
+    /* Un tono azul parecido al mar*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    /* Asegura que el tamaño de los elementos sea más predecible */
+}
+
+.sea {
+    margin: 40px auto 0 auto;
+    overflow: hidden;
+    /* Esto evita que las burbujas se salgan del área */
+}
+
+.sea .bubble {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    /* Da forma redonda a las burbujas */
+    background-color: #6bafca;
+    /* Color azul claro */
+    opacity: 0.9;
+    animation: bubble1-h-movement 1s ease-in infinite,
+        bubble1-v-movement 300ms ease-in-out infinite alternate,
+        bubble-scale-movement 300ms ease-in-out infinite alternate;
+    /* Las burbujas se mueven en varias direcciones */
+}
+
+.sea .bubble:after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #6bafca;
+    opacity: 0.9;
+    /* Hace que las burbujas parezcan transparentes */
+}
+
+.sea .circle-wrapper {
+    position: relative;
+    background: linear-gradient(#2c647a, #204858);
+    /* Simula la profundidad del mar con un degradado. */
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 50%;
+    /* Esto crea la ventana redonda del océano. */
+    padding: 0 50px 0 50px;
+    border: 6px solid #3e8caa;
+}
+
+/* El submarino está hecho por varias partes  para dar el efecto 3D */
+.sea .submarine-wrapper .submarine-body {
+    background: linear-gradient(#d93a54, #bc243d);
+    /* Añade algo de volumen con un degradado suave. */
+}
+
+/* Las animaciones que hacen que el submarino se sienta realista */
+@keyframes diving {
+    0% {
+        margin-top: 5px;
+        /* Comienza más arriba */
+    }
+
+    50% {
+        margin-top: 15px;
+        /* Simula un movimiento de subida y bajada. */
+    }
+
+    100% {
+        margin-top: 5px;
+        /* Vuelve a su posición inicial. */
+    }
+}
+
+/* Los movimientos del helix (hélice) aportan dinamismo al submarino */
+@keyframes helix-movement {
+    100% {
+        background: linear-gradient(to bottom, #e57a8c 50%, #e57a8c, #d93a54, #d93a54 50%);
+        background-size: 100% 20px;
+        /* Crea una sensación de rotación continua. */
+    }
+}
+
+
+@keyframes diving {
+    0% {
+        margin-top: 5px;
+    }
+
+    50% {
+        margin-top: 15px;
+    }
+
+    100% {
+        margin-top: 5px;
+    }
+}
+
+@keyframes diving-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* crean movimiento para las burbujas */
+@keyframes bubble1-h-movement {
+    0% {
+        margin-left: 80%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes bubble2-h-movement {
+    0% {
+        margin-left: 65%;
+    }
+
+    100% {
+        margin-left: -5%;
+    }
+}
+
+@keyframes bubble1-v-movement {
+    0% {
+        margin-top: 115px;
+    }
+
+    100% {
+        margin-top: 160px;
+    }
+}
+
+@keyframes bubble2-v-movement {
+    0% {
+        margin-top: 115px;
+    }
+
+    100% {
+        margin-top: 90px;
+    }
+}
+
+/* hace un efecto de zoom-in y zoom-out */
+@keyframes bubble-scale-movement {
+    0% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+/* Rota */
+@keyframes light-movement {
+    0% {
+        transform: rotate(-40deg);
+    }
+
+    50% {
+        transform: rotate(-70deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+}

@@ -1,4 +1,5 @@
 /* Ejercicio 04 */
+/* cunado la animación llegue a un 100% hará un giro del 100% */
 @keyframes rotateSquared {
     0%{
         transform: rotate(0deg);
@@ -14,4 +15,5 @@
     height: 100px;
     background-color: red;
     animation: rotateSquared 3s ease-in-out 1;
+    /* asignamos la animación con un tiempo de 3s y que se repita 1 veces */
 }
