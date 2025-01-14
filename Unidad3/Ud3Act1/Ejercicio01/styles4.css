@@ -5,7 +5,7 @@
         transform: translateX(0); /* Empieza desde el borde izquierdo */
     }
     to {
-        transform: translateX(100vh); /* Se mueve hasta el borde derecho de la pantalla */
+        transform: translateX(86.5vw); /* Se mueve hasta el borde derecho de la pantalla */
     }
 }
 
