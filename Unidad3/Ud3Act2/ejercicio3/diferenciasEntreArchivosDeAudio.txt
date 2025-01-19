@@ -1,0 +1,13 @@
+
+Santiago Calderon.
+
+Diferencias entre los archivos de audio:
+
+	•	WAV: 63KB 
+	⁃	Es un formato de audio sin comprimir, lo que hace que los archivos sean grandes debido a que conservan toda la calidad del audio original.
+
+	•	MP3: 69KB 
+	⁃	Es un formato de audio comprimido con pérdida, lo que reduce el tamaño del archivo considerablemente. Su tamaño suele ser mucho más pequeño que el WAV.
+
+	•	OGG: 374KB 
+	⁃	Es otro formato comprimido con pérdida, similar al MP3, pero con mejor calidad a un tamaño más pequeño
