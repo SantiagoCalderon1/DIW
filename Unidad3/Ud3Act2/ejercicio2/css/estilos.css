@@ -251,11 +251,14 @@ input[type="button"]:hover {
 }
 
 
-/* Ocultar el lightbox por defecto */
+/* De aqui en adenlante es el código para el lightbox */
+
+/* clase para ocultar el lightbox */
 .lightbox-hidden {
   visibility: hidden;
 }
 
+/* Esto es igual al ejemplo que pusiste, la verdad no hay nada que agregarle */
 #sec-rep {
   position: absolute;
   top: 0;
@@ -270,6 +273,7 @@ input[type="button"]:hover {
   align-items: center;
 }
 
+/* Esto es para el contenedor del contenido del sección del reproductor */
 #sec-rep section {
   background: white;
   border-radius: 10px;
@@ -281,17 +285,4 @@ input[type="button"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-  /* Permite la interacción dentro del lightbox */
-
-}
-
-.lightbox-show {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.lightbox-show {
-  opacity: 1;
 }
