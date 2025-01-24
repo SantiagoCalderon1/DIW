@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      div {
+        box-shadow: inset 0 0 0 5px rgb(255, 255, 255); /* Borde interno */
+      }
+
+      .header > .col-12 {
+        background-color: #fe9a5d;
+      }
+
+      .body > .col-12 {
+        background-color: red;
+      }
+
+      .body .number2 {
+        background-color: #2dffff;
+      }
+
+      .footer > .col-12 {
+        background-color: yellow;
+      }
+
+      .numbers {
+        height: 20vh;
+        line-height: 20vh;
+        font-size: 70px;
+      }
+
+      .header,
+      .footer {
+        height: 10vh;
+        line-height: 10vh;
+      }
+      /*        
+      background-color: #88abdd;
+      background-color: #29fe2f; 
+      */
+
+      @media (min-width: 576px) {
+        .header > .col-12 {
+          background-color: #2dffff;
+        }
+
+        .body .number2 {
+          background-color: red;
+        }
+        .body .number3 {
+          background-color: #29fe2f;
+        }
+
+        .numbers {
+          height: 30vh;
+          line-height: 30vh;
+          font-size: 70px;
+        }
+
+        .number3 {
+          height: 20vh;
+          line-height: 20vh;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header > .col-12 {
+          background-color: #29fe2f;
+        }
+
+        .body .number2 {
+          background-color: red;
+        }
+        .body .number3 {
+          background-color: red;
+        }
+
+        .numbers {
+          height: 50vh;
+          line-height: 50vh;
+          font-size: 70px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row header">
+        <div class="col-12 text-center text-sm-start">Header</div>
+      </div>
+
+      <div class="row body">
+        <div class="col-12 col-sm-6 col-md-4 text-md-center number1 numbers">1</div>
+        <div
+          class="col-12 col-sm-6 col-md-4 text-center text-sm-end text-md-center number2 numbers"
+        >
+          2
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-4 text-end text-sm-center text-md-center number3 numbers"
+        >
+          3
+        </div>
+      </div>
+
+      <div class="row footer">
+        <div class="col-12 col-md-6 text-center footer1">Footer 1</div>
+        <div class="col-12 col-md-6 text-center footer2">Footer 2</div>
+      </div>
+    </div>
+  </body>
+</html>
