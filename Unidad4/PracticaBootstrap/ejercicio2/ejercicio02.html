@@ -1,104 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diseño Responsivo con Bootstrap</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      div {
-        box-shadow: inset 0 0 0 1.5px rgb(255, 255, 255); /* Borde interno */
-      }
-      
-      .header,
-      .footer {
-        background-color: #29fe2f;
-        height: 5vh;
-      }
 
-      .number {
-        background-color: #88abdd;
-        height: 5vh;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-      .letter {
-        background-color: #cccccd;
-        height: 5vh;
-      }
+  <link rel="stylesheet" href="style.css">
 
-      .device {
-        background-color: #2dffff;
-        height: 5vh;
-      }
+</head>
 
-      .icono {
-        background-color: #fe9a5d;
-        height: 5vh;
-      }
+<body>
+  <!-- Header -->
+  <div class="row text-center">
+    <div class="col header">Header</div>
+  </div>
 
-      /* orange #fe9a5d 
-          skyblue #2dffff
-        */
-    </style>
-  </head>
+  <!-- Segunda fila: Números 1, 2, 3, 4 -->
+  <div class="row text-center">
+    <!-- He pensado que una forma de solucionarlo era poniendo cajas vacias,
+    que estuvieran condionadas a ocupar estacio cuando me hicieran falta -->
+    <div class="col-md-3 d-none d-md-block"></div>
+    <div class="col-6 col-sm-3 col-md-3 number">1</div>
+    <div class="col-6 col-sm-3 col-md-3 number">2</div>
+    <div class="col-md-3 d-none d-md-block"></div>
+    <div class="col-6 col-sm-3 col-md-3 number">3</div>
+    <div class="col-md-6 d-none d-md-block"></div>
+    <div class="col-6 col-sm-3 col-md-3 number">4</div>
+  </div>
 
-  <body>
-    <!-- Header -->
-    <div class="row text-center">
-      <div class="col header">Header</div>
-    </div>
+  <div class="row text-center d-none d-sm-block d-md-none">
+    <div class="col device">Tablet</div>
+  </div>
 
-    <!-- Segunda fila: Números 1, 2, 3, 4 -->
-    <div class="row text-center">
-      <div class="col-md-3 d-none d-md-block"></div>
+  <!-- Tercera fila: Letras a, b, c, d con orden cambiado en md/lg -->
+  <div class="row text-center">
+    <div class="col-6 col-sm-3 col-md-3 order-md-4 letter">a</div>
+    <div class="col-6 col-sm-3 col-md-3 order-md-3 letter">b</div>
+    <div class="col-6 col-sm-3 col-md-3 order-md-2 letter">c</div>
+    <div class="col-6 col-sm-3 col-md-3 order-md-1 letter">d</div>
+  </div>
 
-      <div class="col-6 col-sm-3 col-md-3 number">1</div>
+  <div class="row text-center d-none d-md-block">
+    <div class="col device">Desktop</div>
+  </div>
+  <div class="row text-center d-sm-none d-block">
+    <div class="col device">Mobile</div>
+  </div>
 
-      <div class="col-6 col-sm-3 col-md-3 number">2</div>
+  <div class="row text-center">
+    <!-- Esto es una propiedad que encontré en internet y quise probarla, es de bootstrap 3.0,
+        no me gusta del todo -->
+    <div class="col-md-3 d-none clearfix visible-md visible-lg"></div>
+    <div class="col-sm-6 col-md-3 order-md-3 icono">:D</div>
+    <div class="col-sm-6 col-md-3 order-md-2 icono d-none d-sm-block">:(</div>
+    <div class="col-md-3 clearfix visible-md visible-lg"></div>
+  </div>
 
-      <div class="col-md-3 d-none d-md-block"></div>
+  <!-- Footer -->
+  <div class="row text-center d-none d-sm-block">
+    <div class="col footer">Footer</div>
+  </div>
 
-      <div class="col-6 col-sm-3 col-md-3 number">3</div>
+</body>
 
-      <div class="col-md-6 d-none d-md-block"></div>
-
-      <div class="col-6 col-sm-3 col-md-3 number">4</div>
-    </div>
-
-    <div class="row text-center d-none d-sm-block d-md-none">
-      <div class="col device">Tablet</div>
-    </div>
-
-    <!-- Tercera fila: Letras a, b, c, d con orden cambiado en md/lg -->
-    <div class="row text-center">
-      <div class="col-6 col-sm-3 col-md-3 order-md-4 letter">a</div>
-      <div class="col-6 col-sm-3 col-md-3 order-md-3 letter">b</div>
-      <div class="col-6 col-sm-3 col-md-3 order-md-2 letter">c</div>
-      <div class="col-6 col-sm-3 col-md-3 order-md-1 letter">d</div>
-    </div>
-
-    <div class="row text-center d-none d-md-block">
-      <div class="col device">Desktop</div>
-    </div>
-    <div class="row text-center d-sm-none d-block">
-      <div class="col device">Mobile</div>
-    </div>
-
-    <div class="row text-center">
-      <div class="col-md-3 d-none clearfix visible-md visible-lg"></div>
-      <div class="col-sm-6 col-md-3 order-md-3 icono">:D</div>
-      <div class="col-sm-6 col-md-3 order-md-2 icono d-none d-sm-block">:(</div>
-      <div class="col-md-3 clearfix visible-md visible-lg"></div>
-    </div>
-
-    <!-- Footer -->
-    <div class="row text-center d-none d-sm-block">
-      <div class="col footer">Footer</div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

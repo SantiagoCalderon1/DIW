@@ -1,0 +1,83 @@
+div {
+    box-shadow: inset 0 0 0 5px rgb(255, 255, 255);
+    /* Borde interno */
+}
+
+.header>.col-12 {
+    background-color: #fe9a5d;
+}
+
+.body>.col-12 {
+    background-color: red;
+}
+
+.body .number2 {
+    background-color: #2dffff;
+}
+
+.footer>.col-12 {
+    background-color: yellow;
+}
+
+.numbers {
+    height: 20vh;
+    line-height: 20vh;
+    font-size: 70px;
+}
+
+.header,
+.footer {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+/* Las media querys solo las uso para cambiarles el color, y algunos tamaños de los contendores */
+
+@media (min-width: 576px) {
+    .header>.col-12 {
+        background-color: #2dffff;
+    }
+
+    .body .number2 {
+        background-color: red;
+    }
+
+    .body .number3 {
+        background-color: #29fe2f;
+    }
+
+    /* Aquí cambio el tamaño de los contenedores */
+
+    .numbers {
+        height: 30vh;
+        line-height: 30vh;
+        font-size: 70px;
+    }
+
+    .number3 {
+        height: 20vh;
+        line-height: 20vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .header>.col-12 {
+        background-color: #29fe2f;
+    }
+
+    .body .number2 {
+        background-color: red;
+    }
+
+    .body .number3 {
+        background-color: red;
+    }
+
+    /* Aquí cambio el tamaño de los contenedores */
+
+    .numbers {
+        height: 50vh;
+        line-height: 20vh;
+        font-size: 70px;
+    }
+}

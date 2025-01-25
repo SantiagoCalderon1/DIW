@@ -1,0 +1,32 @@
+div {
+    box-shadow: inset 0 0 0 1.5px rgb(255, 255, 255);
+    /* Borde interno */
+}
+
+/* Los colores los conseguí con un color picker */
+
+.header,
+.footer {
+    background-color: #29fe2f;
+    height: 5vh;
+}
+
+.number {
+    background-color: #88abdd;
+    height: 5vh;
+}
+
+.letter {
+    background-color: #cccccd;
+    height: 5vh;
+}
+
+.device {
+    background-color: #2dffff;
+    height: 5vh;
+}
+
+.icono {
+    background-color: #fe9a5d;
+    height: 5vh;
+}
