@@ -1,0 +1,159 @@
+/* Santiago Calderon Castaño */
+
+/* Esto son estils básicos para el ejercicio 2 */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    font-weight: bold;
+}
+
+header {
+    background-color: #cdcdcd;
+    text-align: center;
+    height: 9vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav #breadcrumb {
+    height: 2vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* como no me gustaba que tenias que darle lick al menu hamburguesa y depues a otro desplegable,
+pues he dejado que directamente le des click al de hamburguesa y ya te muestre el men´ */
+.nav-item.dropdown .dropdown-menu {
+    margin: 15px 0px;
+    display: block !important;
+    position: static;
+    width: 100%;
+}
+
+.breadcrumb li a,
+#breadcrumb {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.badge {
+    margin-left: 10px;
+}
+
+.container-inicio {
+    height: 90vh;
+    width: 100%;
+    padding: 5vh 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-sobreNosotros,
+.container-contactanos {
+    width: 100%;
+    padding: 12vh 30px 0 30px;
+}
+
+.card-sobreNosotros,
+.card-contactanos {
+    border: 1px solid rgb(185, 185, 185);
+    margin: 30px 0 30px 0;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card-contactanos img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card-sobreNosotros img {
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.container-contactanos form {
+    margin-bottom: 50px;
+}
+
+
+img {
+    width: 600px;
+    height: 500px;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    height: 10vh;
+}
+
+
+
+/* Estilos para la página de inicio */
+
+.navbar-nav li {
+    padding: 5px;
+}
+
+.navbar-nav li a:hover {
+    font-size: 20px;
+}
+
+.offcanvas-body {
+    overflow: visible !important;
+}
+
+
+/* Estilos para la página contactos */
+
+.dropdown-menu li {
+    position: relative;
+}
+
+
+
+/* No me esta gustando mucho que tenga que obligar las reglas del css
+porque esta dominando la bootstrap, siento que me quita flexibilidad */
+
+#menus .submenu{
+    position: absolute;
+    display: none !important;
+    right: 100%;
+    top: 7px;
+}
+
+#menus .dropdown-menu > li:hover> .submenu {
+    display: block !important;
+}
+
+.dropdown-menu .submenu {
+    right: 40%;
+    width: 250px !important;
+}
+
+.dropdown-menu .subsubmenu {
+    right: 95%;
+}
+
+.menuUl{
+    margin-top: 20px !important;
+}

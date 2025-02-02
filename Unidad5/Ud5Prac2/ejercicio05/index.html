@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Prueba de un formulario</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>formularios con validación en bootstrap</h1>
+    </header>
+    <main>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre: </label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                <div class="valid-feedback">
+                    Campo correcto.
+                </div>
+                <div class="invalid-feedback">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellidos: </label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Apellidos" required>
+                <div class="valid-feedback">
+                    Campo correcto.
+                </div>
+                <div class="invalid-feedback">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username: </label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="valid-feedback">
+                        Campo correcto.
+                    </div>
+                    <div class="invalid-feedback">
+                        El campo no puede estar vacío.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ciudad: </label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="valid-feedback">
+                    Campo correcto.
+                </div>
+                <div class="invalid-feedback">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Comunidad Auntónoma: </label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option value="" selected>Elige una opción!</option>
+                    <option value="1">Andalucía</option>
+                    <option value="2">Aragón</option>
+                    <option value="3">Asturias</option>
+                    <option value="4">Islas Baleares</option>
+                    <option value="5">Canarias</option>
+                    <option value="6">Cantabria</option>
+                    <option value="7">Castilla y León</option>
+                    <option value="8">Castilla-La Mancha</option>
+                    <option value="9">Cataluña</option>
+                    <option value="10">Extremadura</option>
+                    <option value="11">Galicia</option>
+                    <option value="12">Madrid</option>
+                    <option value="13">Murcia</option>
+                    <option value="14">Navarra</option>
+                    <option value="15">País Vasco</option>
+                    <option value="16">La Rioja</option>
+                    <option value="17">Comunidad Valenciana</option>
+                    <option value="18">Ceuta</option>
+                    <option value="19">Melilla</option>
+                </select>
+                <div class="valid-feedback">
+                    Campo correcto.
+                </div>
+                <div class="invalid-feedback">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Código Postal: </label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="valid-feedback">
+                    Campo correcto.
+                </div>
+                <div class="invalid-feedback">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepto los Terminos y Condiones.
+                    </label>
+                    <div class="invalid-feedback">
+                        El campo no puede estar vacío.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // El script lo he sacado de la página de bootstap
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
